@@ -1,0 +1,68 @@
+[
+  {
+    "tag": "eligibility_be",
+    "patterns": [
+      "what is the eligibility for BE at sdit",
+      "eligibility for engineering admission",
+      "how much marks are needed for engineering",
+      "what are the admission requirements for BE",
+      "can i get admission with 45 percent in pcm"
+    ],
+    "response": "For admission to the B.E program, a candidate must have passed Pre-University Board or any other examination recognized by the University, with a minimum of 45% aggregate marks in Physics, Chemistry and Mathematics. For students belonging to SC, ST and OBC categories, the minimum is 40%."
+  },
+  {
+    "tag": "eligibility_mba",
+    "patterns": [
+      "what is the eligibility for MBA at sdit",
+      "how can I get into MBA",
+      "mba admission requirements",
+      "what marks are needed for MBA",
+      "can I do MBA at sdit"
+    ],
+    "response": "For admission to the MBA programme, a candidate must have passed a Bachelor's Degree examination or equivalent from a recognized University of a minimum of 3 years duration, and obtained an aggregate minimum of 50% marks taken together in all subjects including languages. For SC, ST and Category-I Karnataka candidates, the minimum is 45%."
+  },
+  {
+    "tag": "eligibility_mca",
+    "patterns": [
+      "what is the eligibility for MCA at sdit",
+      "can I do MCA if I have BSc",
+      "what degree do I need for MCA",
+      "mca admission requirements",
+      "how to get admission in MCA"
+    ],
+    "response": "For admission to MCA, a candidate must have passed BCA or Bachelor Degree in Computer Science Engineering or equivalent, or B.Sc / B.Com / B.A preferably with Mathematics, and obtained an aggregate minimum of 50% marks. Students without a Mathematics background will have to study and pass bridge courses as notified by the University. For SC, ST and Category-I Karnataka candidates, the minimum is 45%."
+  },
+  {
+    "tag": "eligibility_mtech",
+    "patterns": [
+      "what is the eligibility for mtech at sdit",
+      "can I do mtech without gate score",
+      "how to get admission in mtech",
+      "mtech admission requirements",
+      "what marks are needed for mtech"
+    ],
+    "response": "For admission to M.E / M.Tech / M.Arch, a candidate must have passed the qualifying examination as prescribed by the Competent Authority and obtained an aggregate minimum of 50% marks. For SC, ST and Category-I Karnataka candidates, the minimum is 45%. A valid GATE score is also mentioned among eligibility criteria."
+  },
+  {
+    "tag": "documents_required",
+    "patterns": [
+      "what documents are needed for admission",
+      "what certificates should I bring for admission",
+      "documents required for joining sdit",
+      "admission documents checklist",
+      "what all certificates are required"
+    ],
+    "response": "For B.E admission, the required documents are: original Secondary School Leaving Certificate (SSLC), original Pre-University Certificate (PUC), photocopy of Aadhaar Card, original Transfer Certificate and Conduct Certificate, passport size photograph, and migration certificate for non-Karnataka students. For PG programs, original undergraduate degree marks cards and provisional course clearance certificate are also required."
+  },
+  {
+    "tag": "how_to_apply",
+    "patterns": [
+      "how can I apply to sdit",
+      "where is the application form",
+      "how to fill the admission form",
+      "where can I get the application",
+      "is there an online application"
+    ],
+    "response": "You can apply to Shree Devi Institute of Technology through the application form available on the official website at sdit.ac.in/application-form. There is also an 'Apply Now' link on the website for quick access."
+  }
+]

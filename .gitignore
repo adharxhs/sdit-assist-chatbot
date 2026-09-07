@@ -1,0 +1,21 @@
+# Project instructions — not part of the build
+AGENTS.md
+
+# Dev-only scraped data
+data/raw/
+
+# CodeLens graph data
+.codelens/
+codelens-out/
+
+# Dependencies
+node_modules/
+
+# Caches
+.cache/
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db

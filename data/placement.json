@@ -1,0 +1,68 @@
+[
+  {
+    "tag": "placement_overview",
+    "patterns": [
+      "tell me about placements at sdit",
+      "how are the campus placements",
+      "what is the placement record of sdit",
+      "placement statistics at sdit",
+      "are placements good at sdit"
+    ],
+    "response": "Shree Devi Institute of Technology has consistently maintained an excellent recruitment record. On average, 90-95% of eligible final year students have been placed through campus placements over recent years. Placements begin in the 7th semester with participation from top-tier corporate and engineering sector companies."
+  },
+  {
+    "tag": "placement_statistics",
+    "patterns": [
+      "what is the placement percentage",
+      "how many offer letters were given",
+      "placement statistics year by year",
+      "what percentage of students get placed",
+      "how many students got placed"
+    ],
+    "response": "On average 90–95% of eligible final year students are placed through campus placements. Historical offer letter statistics include: 427+ offers in 2016, 452+ in 2017, 461+ in 2018, 480+ in 2019, and 492+ offer letters in 2020."
+  },
+  {
+    "tag": "placement_recruiters",
+    "patterns": [
+      "which companies visit sdit for placement",
+      "who are the top recruiters",
+      "list of recruiting companies at sdit",
+      "what companies hire from sdit",
+      "does infosys visit sdit"
+    ],
+    "response": "Leading companies recruiting from SDIT include Infosys, Accenture, Amazon, IBM, Cognizant, Deloitte, Oracle, EY, PwC, HCLTech, Cisco, Dell Technologies, Tech Mahindra, Wells Fargo, SLK Software, Mphasis, Trigent Software, Airtel, Ericsson, QSpider, ICICI Bank and many others."
+  },
+  {
+    "tag": "placement_training",
+    "patterns": [
+      "what placement training is provided",
+      "does sdit give pre placement training",
+      "how does sdit prepare students for interviews",
+      "are there aptitude classes for placement",
+      "tell me about training and placement cell"
+    ],
+    "response": "The Department of Placement & Training provides pre-placement training on aptitude, logical skills, technical knowledge and communication for 2nd, 3rd and final year students. Activities include mock interviews by experts, placement talks by resource persons, resume building workshops, PDP programs, bridge courses and assistance with industrial internships."
+  },
+  {
+    "tag": "placement_officer",
+    "patterns": [
+      "who is the placement officer",
+      "who is the tpo at sdit",
+      "contact placement department",
+      "name of the placement officer",
+      "tpo contact details"
+    ],
+    "response": "The Training and Placement Officer (TPO) at Shree Devi Institute of Technology is Mr. Roshal Lynshal Nazareth. The department facilitates campus recruitment, pool campus drives, and industry interaction for students."
+  },
+  {
+    "tag": "placement_facilities",
+    "patterns": [
+      "what facilities are available for placement drives",
+      "where are campus interviews conducted",
+      "placement cell infrastructure",
+      "are there interview rooms on campus",
+      "placement drive facilities"
+    ],
+    "response": "The Placement and Training Department cell has set up dedicated facilities for conducting recruitment drives, including a seminar hall for company presentations, group discussion rooms, conferencing facilities, and interview & discussion rooms."
+  }
+]

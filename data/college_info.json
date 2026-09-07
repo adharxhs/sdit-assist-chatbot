@@ -1,0 +1,111 @@
+[
+  {
+    "tag": "college_intro",
+    "patterns": [
+      "what is shree devi institute of technology",
+      "tell me about sdit college",
+      "about the institution",
+      "tell me about this college",
+      "what is sdit"
+    ],
+    "response": "Shree Devi Institute of Technology (SDIT), Kenjar Mangalore is a premier institution dedicated to excellence in engineering education and holistic development. Established in 2006, it offers a conducive learning environment that fosters innovation, creativity and leadership, and is affiliated to Visvesvaraya Technological University and recognized by AICTE."
+  },
+  {
+    "tag": "programs_offered",
+    "patterns": [
+      "what programs does sdit offer",
+      "which courses are available",
+      "what can I study here",
+      "courses offered at sdit",
+      "what degrees does the college offer"
+    ],
+    "response": "Shree Devi Institute of Technology offers opportunities to students to pursue Management (MBA), Computer Application (MCA), Engineering (BE, M.Tech) and Research (PhD). The B.E programs include Computer Science & Engineering, CSE (Artificial Intelligence & Machine Learning), Information Science and Engineering, Artificial Intelligence & Data Science, Electronics & Communication Engineering, Mechanical Engineering, Civil Engineering and Aeronautical Engineering."
+  },
+  {
+    "tag": "established_year",
+    "patterns": [
+      "when was sdit established",
+      "which year was the college started",
+      "how old is sdit",
+      "when was this institution founded",
+      "what year did sdit start"
+    ],
+    "response": "Shree Devi Institute of Technology was established in 2006 and has since emerged as a beacon of quality education."
+  },
+  {
+    "tag": "affiliation",
+    "patterns": [
+      "is sdit affiliated to a university",
+      "which university is sdit affiliated to",
+      "is sdit recognized by aicte",
+      "what is the affiliation of sdit",
+      "is sdit an approved college"
+    ],
+    "response": "Shree Devi Institute of Technology is affiliated to Visvesvaraya Technological University and recognized by AICTE, ensuring that its programs adhere to the highest academic standards and industry relevance."
+  },
+  {
+    "tag": "cet_code",
+    "patterns": [
+      "what is the cet code of sdit",
+      "cet code for sdit",
+      "what is the college code",
+      "ceet code of the college",
+      "cet code"
+    ],
+    "response": "The CET code of Shree Devi Institute of Technology is E146. The PGCET codes are MBA - B281, MCA - C476 and M.Tech - T868."
+  },
+  {
+    "tag": "vision",
+    "patterns": [
+      "what is the vision of the college",
+      "tell me the vision of sdit",
+      "what is the institution vision",
+      "vision statement of sdit"
+    ],
+    "response": "The vision of Shree Devi Institute of Technology is to be an institution of academic excellence imparting technical and management education integrated with human values to face the social and environmental challenges."
+  },
+  {
+    "tag": "mission",
+    "patterns": [
+      "what is the mission of the college",
+      "tell me the mission of sdit",
+      "mission statement of the institution",
+      "what is sdit mission"
+    ],
+    "response": "The mission of SDIT is to disseminate quality education with student-centric learning methodologies, actively engage and encourage students, faculty and staff, mentor students and provide career development support, and impart education that transforms students and empowers them to emerge as professionals by inculcating entrepreneurial attitudes with social and ethical values."
+  },
+  {
+    "tag": "contact_info",
+    "patterns": [
+      "what is the address of sdit",
+      "where is sdit located",
+      "how can I contact the college",
+      "what is sdit phone number",
+      "email address of sdit",
+      "where is the college situated"
+    ],
+    "response": "Shree Devi Institute of Technology is located at Airport Road, Kenjar, Mangalore - 574142, Karnataka, India. You can contact the college at phone +91 (824) 2254104 or +91 (824) 2254102, and by mail at info@sdc.ac.in."
+  },
+  {
+    "tag": "campus_facilities",
+    "patterns": [
+      "what facilities does the campus have",
+      "what is available on the campus",
+      "campus infrastructure details",
+      "what facilities are there in sdit",
+      "does sdit have hostel"
+    ],
+    "response": "The SDIT campus includes state-of-the-art classrooms and well-equipped labs, a seminar hall, an open air theatre, sports and games facilities, a canteen and cafetaria, a recreational area, hostel, transportation and a library."
+  },
+  {
+    "tag": "campus_life",
+    "patterns": [
+      "what is student life like at sdit",
+      "are there co curricular activities",
+      "does sdit encourage sports and culture",
+      "what happens beyond academics at sdit",
+      "student activities in the college"
+    ],
+    "response": "Beyond academics, Shree Devi Institute of Technology offers a vibrant campus life enriched with a wide range of co-curricular activities, sports, cultural events and community engagement initiatives. The college also has strong industry partnerships and a robust placement cell, collaborating with leading companies to provide internship opportunities, industrial visits and placement assistance."
+  }
+]
