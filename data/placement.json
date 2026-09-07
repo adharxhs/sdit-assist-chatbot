@@ -6,9 +6,17 @@
       "how are the campus placements",
       "what is the placement record of sdit",
       "placement statistics at sdit",
-      "are placements good at sdit"
+      "are placements good at sdit",
+      "placement",
+      "placements",
+      "jobs",
+      "campus placement",
+      "recruitment",
+      "job placement",
+      "placed",
+      "i want to know about the overall placement scenario and track record of the college"
     ],
-    "response": "Shree Devi Institute of Technology has consistently maintained an excellent recruitment record. On average, 90-95% of eligible final year students have been placed through campus placements over recent years. Placements begin in the 7th semester with participation from top-tier corporate and engineering sector companies."
+    "response": "SDIT has consistently maintained an excellent recruitment record. On average, 90-95% of eligible final year students are placed through campus placements. Historical offer letters: 427+ (2016), 452+ (2017), 461+ (2018), 480+ (2019), 492+ (2020). Placements begin in the 7th semester with participation from top-tier companies across IT, engineering, finance, and consulting sectors. The college also conducts pool campus drives involving other engineering colleges from the Mangalore region."
   },
   {
     "tag": "placement_statistics",
@@ -17,9 +25,14 @@
       "how many offer letters were given",
       "placement statistics year by year",
       "what percentage of students get placed",
-      "how many students got placed"
+      "how many students got placed",
+      "placement stats",
+      "placement percentage",
+      "placement numbers",
+      "placement record",
+      "how many students were placed in the last few years"
     ],
-    "response": "On average 90–95% of eligible final year students are placed through campus placements. Historical offer letter statistics include: 427+ offers in 2016, 452+ in 2017, 461+ in 2018, 480+ in 2019, and 492+ offer letters in 2020."
+    "response": "On average 90-95% of eligible final year students are placed through campus placements. Year-wise offer letters: 2016 - 427+, 2017 - 452+, 2018 - 461+, 2019 - 480+, 2020 - 492+. SDIT has successfully placed all eligible interested candidates of Engineering, MBA, and MCA through ongoing campus and pool campus placements."
   },
   {
     "tag": "placement_recruiters",
@@ -28,9 +41,16 @@
       "who are the top recruiters",
       "list of recruiting companies at sdit",
       "what companies hire from sdit",
-      "does infosys visit sdit"
+      "does infosys visit sdit",
+      "companies",
+      "recruiters",
+      "hiring companies",
+      "top recruiters",
+      "company list",
+      "which companies come for campus recruitment",
+      "name some companies that recruit from sdit"
     ],
-    "response": "Leading companies recruiting from SDIT include Infosys, Accenture, Amazon, IBM, Cognizant, Deloitte, Oracle, EY, PwC, HCLTech, Cisco, Dell Technologies, Tech Mahindra, Wells Fargo, SLK Software, Mphasis, Trigent Software, Airtel, Ericsson, QSpider, ICICI Bank and many others."
+    "response": "Top recruiters at SDIT include: Infosys, Accenture, Amazon, IBM, Cognizant, Deloitte, Oracle, EY, PwC, HCLTech, Cisco, Dell Technologies, Tech Mahindra, Wells Fargo, SLK Software, Mphasis, Trigent Software, Airtel, Ericsson, QSpider, ICICI Bank, SmartDV, Birla Soft, Sutherland, Sankalp Semiconductor, Collaberaand many more companies across IT, engineering, and consulting sectors."
   },
   {
     "tag": "placement_training",
@@ -39,9 +59,16 @@
       "does sdit give pre placement training",
       "how does sdit prepare students for interviews",
       "are there aptitude classes for placement",
-      "tell me about training and placement cell"
+      "tell me about training and placement cell",
+      "placement training",
+      "training",
+      "interview preparation",
+      "aptitude training",
+      "pre placement",
+      "placement preparation",
+      "what kind of training does the placement department provide to students"
     ],
-    "response": "The Department of Placement & Training provides pre-placement training on aptitude, logical skills, technical knowledge and communication for 2nd, 3rd and final year students. Activities include mock interviews by experts, placement talks by resource persons, resume building workshops, PDP programs, bridge courses and assistance with industrial internships."
+    "response": "The Department of Placement & Training provides comprehensive support: Pre-placement training on aptitude, logical skills, technical knowledge, and communication for 2nd, 3rd, and final year students. Activities include mock interviews by experts, placement talks by resource persons, resume building workshops, PDP programs, bridge courses, technology training programs, competitive exam preparation (CAT, GMAT, aptitude), and assistance with industrial internships. The department also organizes industrial visits for early industry exposure."
   },
   {
     "tag": "placement_officer",
@@ -50,9 +77,13 @@
       "who is the tpo at sdit",
       "contact placement department",
       "name of the placement officer",
-      "tpo contact details"
+      "tpo contact details",
+      "tpo",
+      "placement officer",
+      "training and placement officer",
+      "who heads the placement department"
     ],
-    "response": "The Training and Placement Officer (TPO) at Shree Devi Institute of Technology is Mr. Roshal Lynshal Nazareth. The department facilitates campus recruitment, pool campus drives, and industry interaction for students."
+    "response": "The Training and Placement Officer (TPO) at SDIT is Mr. Roshal Lynshal Nazareth. The department facilitates campus recruitment, pool campus drives, industry interaction, and career guidance for students."
   },
   {
     "tag": "placement_facilities",
@@ -61,8 +92,21 @@
       "where are campus interviews conducted",
       "placement cell infrastructure",
       "are there interview rooms on campus",
-      "placement drive facilities"
+      "placement drive facilities",
+      "placement infrastructure",
+      "interview rooms",
+      "placement facilities"
     ],
-    "response": "The Placement and Training Department cell has set up dedicated facilities for conducting recruitment drives, including a seminar hall for company presentations, group discussion rooms, conferencing facilities, and interview & discussion rooms."
+    "response": "The Placement and Training Department has dedicated facilities for recruitment drives including a seminar hall for company presentations, group discussion rooms, conferencing facilities, and interview & discussion rooms."
+  },
+  {
+    "tag": "placement_goals",
+    "patterns": [
+      "what are the goals of the placement department",
+      "placement department objectives",
+      "what does the placement cell aim to do",
+      "placement department mission"
+    ],
+    "response": "The Placement Department goals are: to assist graduates in developing a balanced set of technical and interpersonal skills with a positive attitude; to act as a nodal agency for forging technology alliances between SDIT departments and industries; to provide quality technical manpower to suit organizational needs; and to develop as a single-window point for career counselling and higher learning in engineering and technology."
   }
 ]

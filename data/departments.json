@@ -6,9 +6,14 @@
       "which courses are offered in the college",
       "list the departments",
       "what programs are available",
-      "what all departments are there"
+      "what all departments are there",
+      "departments",
+      "department list",
+      "all departments",
+      "how many departments",
+      "could you please provide me with a complete list of all the departments and programs available at sdit"
     ],
-    "response": "SDIT offers B.E programs in Computer Science & Engineering, CSE (Artificial Intelligence & Machine Learning), Information Science and Engineering, Artificial Intelligence & Data Science, Electronics & Communication Engineering, Mechanical Engineering, Civil Engineering and Aeronautical Engineering, along with M.Tech in Construction Technology, Master of Business Administration, Master of Computer Applications and a Research Centre (PhD)."
+    "response": "SDIT offers the following departments: B.E in Computer Science & Engineering (CSE), CSE (Artificial Intelligence & Machine Learning), Information Science & Engineering (ISE), Artificial Intelligence & Data Science (AI&DS), Electronics & Communication Engineering (ECE), Mechanical Engineering (ME), Civil Engineering (CE), and Aeronautical Engineering. Postgraduate: M.Tech in Construction Technology, Master of Business Administration (MBA), Master of Computer Applications (MCA), and a Research Centre for PhD."
   },
   {
     "tag": "dept_cse",
@@ -17,9 +22,17 @@
       "tell me about the cse department",
       "what does the cse department offer",
       "about computer science and engineering",
-      "what is the cse branch"
+      "what is the cse branch",
+      "computer science engineering at sdit",
+      "cse",
+      "computer science",
+      "cs department",
+      "cse department",
+      "i want to know everything about the computer science and engineering department at sdit",
+      "cse course details",
+      "cse labs"
     ],
-    "response": "The Department of Computer Science and Engineering (CSE) was instituted in 2006 and offers a 4 year B.E degree in Computer Science and Engineering. The department encourages students to take part in sponsored research projects through industry-institute collaboration and provides state-of-the-art facilities. Its lab facilities include Data Structure Lab, OOPS Lab, Microprocessor Lab, Operating Systems Lab, Computer Networking Lab, Algorithms Lab, DBMS Lab and Internet Programming Lab."
+    "response": "The Department of Computer Science and Engineering (CSE) was established in 2006 and offers a 4-year B.E degree. With world-class training and research, the department encourages students to take part in sponsored research projects through industry-institute collaboration. Lab facilities include Data Structure Lab, OOPS Lab, Electronics Circuits & Logic Design Lab, Microprocessor Lab, Operating Systems Lab, Computer Networking Lab, Algorithms Lab, DBMS Lab, System Programming Lab, and Internet Programming Lab."
   },
   {
     "tag": "dept_cse_aiml",
@@ -28,9 +41,15 @@
       "tell me about cse artificial intelligence and machine learning",
       "what is the aiml branch",
       "cse with machine learning",
-      "about the cse ai ml department"
+      "about the cse ai ml department",
+      "aiml",
+      "cse aiml",
+      "artificial intelligence and machine learning",
+      "ai ml course",
+      "cse ai",
+      "tell me about the artificial intelligence and machine learning program offered under cse"
     ],
-    "response": "The Department of CSE (Artificial Intelligence & Machine Learning) was instituted by Shree Devi Institute of Technology owing to the increasing demand for computer professionals and software developers. It offers a 4 year B.E degree in CSE (Artificial Intelligence & Machine Learning) with world class training and research, and the department provides state-of-the-art facilities to students."
+    "response": "The Department of CSE (Artificial Intelligence & Machine Learning) was established to meet the increasing demand for computer professionals. It offers a 4-year B.E degree in CSE (AI & ML) with world-class training, research opportunities, and state-of-the-art facilities. The program covers machine learning algorithms, deep learning, natural language processing, and AI applications."
   },
   {
     "tag": "dept_ise",
@@ -39,9 +58,14 @@
       "tell me about the ise department",
       "information science and engineering course",
       "what is ise",
-      "about the information science department"
+      "about the information science department",
+      "ise",
+      "information science",
+      "is department",
+      "ise course details",
+      "could you explain what the information science and engineering program involves"
     ],
-    "response": "Information Science and Engineering enables connectivity of data across the globe and caters to the needs of all domains that require large data intensive applications. The department offers an eight semester bachelor's degree in Information Science as per the VTU syllabus, and students are encouraged to visit IT exhibitions, participate in industry sponsored seminars and conferences, and interact with industry representatives."
+    "response": "The Information Science & Engineering department enables connectivity of data across the globe, catering to domains requiring large data-intensive applications. It offers an eight-semester B.E degree as per VTU syllabus. Students are encouraged to visit IT exhibitions, participate in industry-sponsored seminars and conferences, and interact with industry representatives."
   },
   {
     "tag": "dept_ai_data_science",
@@ -50,9 +74,15 @@
       "tell me about the ai and data science branch",
       "ai data science course at sdit",
       "what is the ai ds department",
-      "about artificial intelligence and data science"
+      "about artificial intelligence and data science",
+      "aids",
+      "ai ds",
+      "data science",
+      "ai and data science",
+      "artificial intelligence data science",
+      "i am interested in the artificial intelligence and data science course can you tell me about it"
     ],
-    "response": "The Department of Artificial Intelligence & Data Science was instituted by Shree Devi Institute of Technology owing to the increasing demand for computer professionals and software developers. It offers a 4 year B.E degree in Artificial Intelligence & Data Science with world class training, research and state-of-the-art facilities."
+    "response": "The Department of Artificial Intelligence & Data Science was established to meet the growing demand for AI and data science professionals. It offers a 4-year B.E degree with world-class training, research opportunities, and state-of-the-art facilities, preparing students for careers in machine learning, big data analytics, and intelligent systems."
   },
   {
     "tag": "dept_me",
@@ -61,9 +91,14 @@
       "tell me about the mechanical department",
       "mechanical engineering course details",
       "what does mechanical engineering include",
-      "about mechanical engineering at sdit"
+      "about mechanical engineering at sdit",
+      "mechanical",
+      "mech",
+      "mechanical engineering",
+      "me department",
+      "i want detailed information about the mechanical engineering department and its lab facilities"
     ],
-    "response": "Mechanical engineering applies the principles of physics and materials science for analysis, design, manufacturing and maintenance of mechanical systems. The Department of Mechanical Engineering at SDIT is backed by well developed laboratories such as the CAED lab and CAMD lab with state of the art hardware and software, preparing students for diversified areas including designing and analyzing manufacturing plants, industrial equipment, robotics, medical devices and more."
+    "response": "The Department of Mechanical Engineering applies principles of physics and materials science for analysis, design, manufacturing, and maintenance of mechanical systems. It is backed by well-developed laboratories including CAED Lab and CAMD Lab with state-of-the-art hardware and software, preparing students for diverse areas including designing and analyzing manufacturing plants, industrial equipment, robotics, medical devices, and more."
   },
   {
     "tag": "dept_ce",
@@ -72,9 +107,13 @@
       "tell me about the civil department",
       "civil engineering course details",
       "about civil engineering at sdit",
-      "what does civil engineering involve"
+      "what does civil engineering involve",
+      "civil",
+      "civil engineering",
+      "ce department",
+      "i would like to understand what the civil engineering program covers"
     ],
-    "response": "The Department of Civil Engineering emphasises quality education in the field of Civil Engineering. It requires a broad understanding of scientific principles, knowledge of materials and the art of analysis and synthesis along with research, team work, leadership and business skills. Its lab facilities include Basic Material Testing Lab, Surveying Practice Lab, Hydraulic Lab, CAD Lab, Environment Engineering Lab and Geo-Tech Lab among others."
+    "response": "The Department of Civil Engineering emphasises quality education requiring a broad understanding of scientific principles, knowledge of materials, and the art of analysis and synthesis, along with research, teamwork, leadership, and business skills. Lab facilities include Basic Material Testing Lab, Surveying Practice Lab, Hydraulic Lab, CAD Lab, Environment Engineering Lab, and Geo-Tech Lab."
   },
   {
     "tag": "dept_ece",
@@ -83,9 +122,14 @@
       "tell me about the ece department",
       "ece course details",
       "about electronics and communication engineering",
-      "what is the ece branch"
+      "what is the ece branch",
+      "ece",
+      "electronics",
+      "electronics and communication",
+      "ec department",
+      "can you provide information about the electronics and communication engineering department"
     ],
-    "response": "The Department of Electronics & Communication Engineering imparts quality education to help students find openings in the Telecommunication and Computer industry. The B.E degree is affiliated to the Visvesvaraya Technological University (VTU). Lab facilities include Analog Electronics Lab, Logic Design Lab, Microcontrollers Lab, DSP Lab, VLSI Lab and Power Electronics Lab among others."
+    "response": "The Department of Electronics & Communication Engineering imparts quality education to help students find openings in the Telecommunication and Computer industry. The B.E degree is affiliated to VTU. Lab facilities include Analog Electronics Lab, Logic Design Lab, Microcontrollers Lab, DSP Lab, VLSI Lab, and Power Electronics Lab."
   },
   {
     "tag": "dept_aero",
@@ -94,31 +138,48 @@
       "tell me about the aeronautical department",
       "aero engineering course details",
       "what does aeronautical engineering cover",
-      "about aeronautical engineering at sdit"
+      "about aeronautical engineering at sdit",
+      "aeronautical",
+      "aero",
+      "aeronautical engineering",
+      "aerospace",
+      "flight engineering",
+      "i am curious about the aeronautical engineering course and what it involves"
     ],
-    "response": "Aeronautical Engineering encompasses designing aircraft, stability and control of aerospace vehicles, propulsion systems, low and high speed aerodynamics and the development of advanced technologies in the field of defence and space science. The department has experienced faculty who provide students individual attention, and has adopted Project Based learning so students can apply their creative problem solving knowledge to real world problems."
+    "response": "The Aeronautical Engineering department covers aircraft design, stability and control of aerospace vehicles, propulsion systems, low and high speed aerodynamics, and development of advanced technologies in defence and space science. Experienced faculty provide individual attention, and the department has adopted Project-Based Learning so students can apply creative problem-solving skills to real-world problems."
   },
   {
     "tag": "dept_mca",
     "patterns": [
-      "what is mca",
-      "tell me about the mca course",
-      "master of computer applications details",
-      "mca program at sdit",
-      "what is the master of computer applications"
+      "tell me about the mca department",
+      "master of computer applications course",
+      "what is the mca course at sdit",
+      "mca department overview",
+      "tell me about the mca program at sdit",
+      "mca",
+      "master of computer applications",
+      "computer applications",
+      "mca course",
+      "what is mca"
     ],
-    "response": "The Master of Computer Applications (MCA) program at Shree Devi Institute of Technology is a two years full-time course that includes interactive classes, national seminars and outbound activities, and emphasizes practical experience through projects and internships. Upon completion, graduates are prepared for careers in software development, IT consulting and systems analysis."
+    "response": "The Master of Computer Applications (MCA) program at SDIT is a two-year full-time course that includes interactive classes, national seminars, and outbound activities. It emphasizes practical experience through projects and internships. Graduates are prepared for careers in software development, IT consulting, and systems analysis. PGCET Code: C476."
   },
   {
     "tag": "dept_mba",
     "patterns": [
+      "tell me about the mba department",
+      "master of business administration course",
+      "what is the mba course at sdit",
+      "mba department overview",
+      "mba course details at sdit",
+      "mba",
+      "business administration",
+      "management course",
+      "mba program",
       "what is mba",
-      "tell me about the mba program",
-      "master of business administration details",
-      "what does the mba course cover",
-      "mba at sdit"
+      "i would like to know about the mba program and the specialisations offered"
     ],
-    "response": "The MBA program at Shree Devi Institute of Technology stresses on the managerial aspects of accounting, finance, marketing and management, with case studies and industrial visits incorporated into the syllabus to prepare students for managerial positions in small businesses as well as multinational companies. It equips students with practical skills offering dual specialisations in areas like Marketing, Finance and HR."
+    "response": "The MBA program at SDIT focuses on managerial aspects of accounting, finance, marketing, and management, with case studies and industrial visits incorporated into the syllabus. It equips students with practical skills, offering dual specialisations in areas like Marketing, Finance, and HR, preparing them for managerial positions in small businesses as well as multinational companies. PGCET Code: B281."
   },
   {
     "tag": "dept_mtech",
@@ -127,9 +188,15 @@
       "tell me about the mtech course",
       "m tech construction technology details",
       "what is the construction technology program",
-      "mtech at sdit"
+      "mtech department at sdit",
+      "does sdit offer mtech program",
+      "mtech",
+      "m tech",
+      "construction technology",
+      "postgraduate engineering",
+      "what is the mtech program about"
     ],
-    "response": "The M.Tech in Construction Technology prepares students with a broad set of technical skills as well as business, communication and management knowledge in order to enter the construction management field. After completion, graduates can look for employment in consultancy firms, quality testing labs, road projects and building work, or open their own independent consultancy services."
+    "response": "The M.Tech in Construction Technology prepares students with broad technical skills as well as business, communication, and management knowledge for the construction management field. Graduates can find employment in consultancy firms, quality testing labs, road projects, building work, or start their own independent consultancy services. PGCET Code: T868."
   },
   {
     "tag": "dept_phd",
@@ -138,8 +205,34 @@
       "tell me about the phd program",
       "research centre details",
       "what is the research centre at sdit",
-      "does sdit offer phd"
+      "does sdit offer phd",
+      "phd",
+      "research",
+      "doctorate",
+      "research centre",
+      "research programs",
+      "can i do a phd at sdit"
     ],
-    "response": "SDIT has established a Research Centre to facilitate research and knowledge generation and to identify itself in the international arena. The Physics Research Centre facilitates a strong Doctoral Program and research projects with very active national and international research collaboration programs."
+    "response": "SDIT has established a Research Centre to facilitate research and knowledge generation and to build its presence in the international arena. The Physics Research Centre facilitates a strong Doctoral Program and research projects with active national and international research collaboration programs."
+  },
+  {
+    "tag": "be_programs",
+    "patterns": [
+      "be",
+      "b.e",
+      "b.e.",
+      "bachelor of engineering",
+      "engineering degree",
+      "undergraduate engineering",
+      "be programs",
+      "be courses",
+      "what be courses are available",
+      "tell me about the be programs at sdit",
+      "btech",
+      "b.tech",
+      "bachelor engineering",
+      "engineering programs"
+    ],
+    "response": "SDIT offers 4-year B.E (Bachelor of Engineering) programs in 8 branches: Computer Science & Engineering (CSE), CSE (AI & ML), Information Science & Engineering (ISE), Artificial Intelligence & Data Science (AI&DS), Electronics & Communication Engineering (ECE), Mechanical Engineering (ME), Civil Engineering (CE), and Aeronautical Engineering. Eligibility: minimum 45% aggregate in Physics, Chemistry & Mathematics at PUC level (40% for SC/ST/OBC). CET Code: E146."
   }
 ]

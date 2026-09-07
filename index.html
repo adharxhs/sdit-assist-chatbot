@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDIT TechBot — Shree Devi Institute of Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="header-info">
+        <div class="bot-avatar">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="white">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+        </div>
+        <div class="bot-title">
+          <h1>SDIT TechBot</h1>
+          <div class="bot-status">
+            <span class="status-dot"></span> Offline-Ready &bull; CSE Department
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Messages Window -->
+    <main class="chat-messages" id="chatMessages" role="log" aria-live="polite">
+      <div class="message bot">
+        <div class="message-bubble">
+          Welcome to <strong>Shree Devi Institute of Technology (SDIT)</strong>! I am TechBot, your automated assistant. How can I help you today? You can ask about courses, departments, admissions, campus facilities, or placements.
+        </div>
+        <div class="message-time" id="welcomeTime"></div>
+      </div>
+    </main>
+
+    <!-- Quick Suggestion Chips -->
+    <div class="chat-suggestions" id="suggestionsContainer">
+      <button class="suggestion-chip" data-query="What courses are offered at SDIT?">Courses Offered</button>
+      <button class="suggestion-chip" data-query="What is the BE eligibility criteria?">BE Eligibility</button>
+      <button class="suggestion-chip" data-query="Tell me about campus facilities">Campus Facilities</button>
+      <button class="suggestion-chip" data-query="What are the placement statistics?">Placements</button>
+      <button class="suggestion-chip" data-query="How can I contact SDIT?">Contact Info</button>
+    </div>
+
+    <!-- Input Footer -->
+    <footer class="chat-input-area">
+      <input type="text" id="userInput" class="chat-input" placeholder="Ask a question about SDIT..." maxlength="300" autocomplete="off">
+      <button type="button" id="sendBtn" class="send-btn" aria-label="Send message">
+        <svg viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </footer>
+  </div>
+
+  <!-- Matching Engine & Application Wiring -->
+  <script src="src/engine.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

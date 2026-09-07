@@ -6,9 +6,14 @@
       "describe the campus facilities",
       "what does the campus look like",
       "what infrastructure does sdit have",
-      "campus details of sdit"
+      "campus details of sdit",
+      "campus",
+      "campus overview",
+      "tell me about the campus",
+      "what is the campus like",
+      "can you describe the overall campus and its facilities in detail"
     ],
-    "response": "The SDIT campus features state-of-the-art classrooms, well-equipped laboratories, a seminar hall, an open air theatre, sports and games facilities, a canteen, a cafetaria, a recreational area, hostel, transportation and a library. The campus is set amidst the vibrant surroundings of suburban Mangalore."
+    "response": "The SDIT campus features state-of-the-art classrooms, well-equipped laboratories, a seminar hall, an open air theatre, sports and games facilities, a canteen, a cafeteria, a recreational area, hostel accommodation, transportation services, and a library. The campus is set amidst the vibrant surroundings of suburban Mangalore with modern buildings housing excellent instructional facilities."
   },
   {
     "tag": "classrooms",
@@ -17,7 +22,10 @@
       "about the classroom facilities",
       "tell me about classrooms",
       "describe the lecture halls",
-      "does sdit have good classrooms"
+      "does sdit have good classrooms",
+      "classrooms",
+      "lecture halls",
+      "teaching rooms"
     ],
     "response": "SDIT has state-of-the-art, well-equipped classrooms that provide a supportive environment for students' academic pursuits."
   },
@@ -28,9 +36,15 @@
       "tell me about the laboratories",
       "are there good labs on campus",
       "lab facilities at sdit",
-      "which labs are available"
+      "which labs are available",
+      "labs",
+      "laboratory",
+      "laboratories",
+      "lab facilities",
+      "computer lab",
+      "what kind of lab facilities and equipment does the college have"
     ],
-    "response": "SDIT has well-equipped laboratories providing a supportive environment for students' academic pursuits. The labs include department-specific facilities such as Data Structure Lab, OOPS Lab, Microprocessor Lab, Computer Networking Lab, DBMS Lab, Analog Electronics Lab, VLSI Lab, Metallographic & Material Testing Lab, Fluid Mechanics Lab, CAD Lab and many more."
+    "response": "SDIT has well-equipped laboratories across departments. These include: Data Structure Lab, OOPS Lab, Electronics Circuits & Logic Design Lab, Microprocessor Lab, Operating Systems Lab, Computer Networking Lab, Algorithms Lab, DBMS Lab, System Programming Lab, Internet Programming Lab, Analog Electronics Lab, Logic Design Lab, Microcontrollers Lab, DSP Lab, VLSI Lab, Power Electronics Lab, Basic Material Testing Lab, Surveying Practice Lab, Hydraulic Lab, CAD Lab, CAED Lab, CAMD Lab, Environment Engineering Lab, Geo-Tech Lab, and more."
   },
   {
     "tag": "library",
@@ -39,9 +53,12 @@
       "tell me about the library",
       "what is the library like",
       "library facilities at sdit",
-      "is there a library on campus"
+      "is there a library on campus",
+      "library",
+      "books",
+      "reading room"
     ],
-    "response": "Yes, SDIT has a library on campus for students and faculty."
+    "response": "Yes, SDIT has a well-stocked library on campus for students and faculty, supporting academic studies and research."
   },
   {
     "tag": "hostel",
@@ -50,9 +67,15 @@
       "is there hostel accommodation at sdit",
       "tell me about hostel facilities",
       "where do outstation students stay",
-      "is hostel available for students"
+      "is hostel available for students",
+      "hostel",
+      "accommodation",
+      "boarding",
+      "stay",
+      "residence",
+      "hostels"
     ],
-    "response": "Yes, SDIT provides hostel accommodation for students on campus."
+    "response": "Yes, SDIT provides hostel accommodation for students on campus. The hostel facilities are designed to offer a comfortable living environment for outstation students."
   },
   {
     "tag": "sports",
@@ -61,9 +84,14 @@
       "tell me about sports at sdit",
       "what sports are available",
       "are there any sports competitions",
-      "sports activities in the college"
+      "sports activities in the college",
+      "sports",
+      "games",
+      "athletics",
+      "sports facilities",
+      "what sports activities and competitions does the college participate in"
     ],
-    "response": "The college provides adequate facilities for sporting activities that are necessary to encourage the all-round development of the students. The college sports teams have represented the college in various state and national level competitions and have brought home laurels. The college also hosts a state-level, intercollegiate tournament which is very popular with the student fraternity."
+    "response": "SDIT provides adequate facilities for sporting activities to encourage all-round development. College sports teams have represented SDIT in various state and national level competitions and have brought home laurels. The college also hosts a state-level intercollegiate tournament which is very popular with the student fraternity."
   },
   {
     "tag": "transportation",
@@ -72,9 +100,15 @@
       "is there a college bus",
       "tell me about transport facilities",
       "how do students get to campus",
-      "does sdit have buses"
+      "does sdit have buses",
+      "transport",
+      "transportation",
+      "bus",
+      "college bus",
+      "bus facility",
+      "commute"
     ],
-    "response": "Yes, SDIT provides transportation facilities for students to commute to and from the campus."
+    "response": "Yes, SDIT provides transportation facilities with college buses for students to commute to and from the campus."
   },
   {
     "tag": "canteen",
@@ -83,9 +117,15 @@
       "does sdit have a canteen",
       "tell me about food facilities",
       "where can students eat on campus",
-      "canteen and cafeteria at sdit"
+      "canteen and cafeteria at sdit",
+      "canteen",
+      "cafeteria",
+      "food",
+      "mess",
+      "eating",
+      "food court"
     ],
-    "response": "The campus has both a canteen and a cafetaria offering food and refreshment facilities for students and staff."
+    "response": "The campus has both a canteen and a cafeteria offering food and refreshment facilities for students and staff."
   },
   {
     "tag": "seminar_hall",
@@ -94,9 +134,13 @@
       "tell me about the seminar hall",
       "is there a hall for events",
       "auditorium at sdit",
-      "where are seminars held"
+      "where are seminars held",
+      "seminar hall",
+      "auditorium",
+      "event hall",
+      "conference hall"
     ],
-    "response": "SDIT has a seminar hall on campus for conducting seminars, workshops and other academic events."
+    "response": "SDIT has a seminar hall on campus used for conducting seminars, workshops, company presentations during placement drives, and other academic events."
   },
   {
     "tag": "open_air_theatre",
@@ -105,9 +149,12 @@
       "tell me about the open air theatre",
       "is there an amphitheatre on campus",
       "outdoor event space at sdit",
-      "open air theatre details"
+      "open air theatre details",
+      "open air theatre",
+      "amphitheatre",
+      "outdoor theatre"
     ],
-    "response": "SDIT has an open air theatre on campus which is used for various cultural events, performances and student gatherings."
+    "response": "SDIT has an open air theatre on campus which is used for various cultural events, performances, student gatherings, and celebrations."
   },
   {
     "tag": "recreational_area",
@@ -116,7 +163,11 @@
       "tell me about recreation facilities",
       "where can students relax on campus",
       "does sdit have recreation spaces",
-      "any recreation zone at sdit"
+      "any recreation zone at sdit",
+      "recreation",
+      "recreational area",
+      "relaxation spot",
+      "hangout"
     ],
     "response": "The campus includes a recreational area where students can relax and unwind between classes."
   }
