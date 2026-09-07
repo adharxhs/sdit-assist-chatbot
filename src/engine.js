@@ -178,9 +178,9 @@
       this.stopWords = config.stopWords || DEFAULT_STOP_WORDS;
       this.indexResponse = config.indexResponse !== undefined ? config.indexResponse : true;
       this.responseWeight = typeof config.responseWeight === 'number' ? config.responseWeight : 0.3;
-      this.greetingResponse = config.greetingResponse || "Hello! Welcome to SDIT TechBot. I can help you with information about Shree Devi Institute of Technology. Ask me about courses & departments, admissions & eligibility, campus facilities, placements, or general college info!";
+      this.greetingResponse = config.greetingResponse || "Hello! Welcome to SDIT Assist. I can help you with information about Shree Devi Institute of Technology. Ask me about courses & departments, admissions & eligibility, campus facilities, placements, or general college info!";
       this.thanksResponse = config.thanksResponse || "You're welcome! Feel free to ask if you have more questions about SDIT.";
-      this.byeResponse = config.byeResponse || "Goodbye! Thank you for using SDIT TechBot. Have a great day!";
+      this.byeResponse = config.byeResponse || "Goodbye! Thank you for using SDIT Assist. Have a great day!";
       this.documents = [];
       this.idf = {};
       this.vocabulary = new Set();

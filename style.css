@@ -112,23 +112,6 @@ body {
   color: var(--chalk-white);
 }
 
-.bot-status {
-  font-size: 0.72rem;
-  color: var(--chalk-muted);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  background-color: #5a9a6a;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 6px rgba(90, 154, 106, 0.5);
-}
-
 /* Messages List */
 .chat-messages {
   flex: 1;
