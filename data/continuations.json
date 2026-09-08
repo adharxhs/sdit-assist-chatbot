@@ -1,0 +1,12 @@
+{
+  "_comment": "Follow-up responses for affirmative (yes/sure/tell me more) and negative (no/that's all) replies to trailing questions. All content traced from existing data tags and source pages; no new figures.",
+  "affirmNoTopic": "Sure — what would you like to know? I can help with: (1) College Info — about SDIT, vision, mission, affiliation, CET codes, faculty; (2) Departments — CSE, AIML, ISE, AI&DS, ECE, Mechanical, Civil, Aeronautical, MBA, MCA, M.Tech, PhD; (3) Admissions — eligibility, documents, how to apply, fees; (4) Campus — hostel, labs, library, sports, canteen, transport; (5) Placements — stats, recruiters, training, internships. Just ask!",
+  "decline": "No problem! I'm here whenever you have more questions about SDIT. You can ask me about college info, departments, admissions & eligibility, campus facilities, or placements anytime.",
+  "continuations": {
+    "departments": "Sure! I can go into more depth on any of these. Ask me about CSE, CSE (AI & ML), ISE, AI & Data Science, ECE, Mechanical, Civil, Aeronautical, M.Tech, MBA, MCA, or the PhD research centre. Which one would you like to explore next?",
+    "college_info": "Of course! I can tell you more about SDIT's establishment, vision & mission, affiliation and recognition, CET/PGCET codes, contact details, faculty, or campus facilities. What would you like to dig into?",
+    "admissions": "Happy to help! I can walk you through B.E eligibility, MBA/MCA/M.Tech eligibility, the documents you'll need, how to apply, or fees. Which one would you like?",
+    "campus": "Sure! I can cover the hostel, labs, library, classrooms, sports, canteen, transport, seminar hall, or the open-air theatre. Which facility would you like details on?",
+    "placement": "Absolutely! I can tell you more about placement statistics, top recruiters, pre-placement training, the placement officer, placement facilities, or internship opportunities. What interests you?"
+  }
+}

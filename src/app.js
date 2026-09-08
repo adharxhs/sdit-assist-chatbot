@@ -42,6 +42,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     await Promise.all(loadPromises);
+
+    const contResponse = await fetch('data/continuations.json');
+    if (contResponse.ok) {
+      const cont = await contResponse.json();
+      if (cont && typeof cont === 'object') {
+        engine.affirmContinuations = cont.continuations || engine.affirmContinuations;
+        if (cont.affirmNoTopic) engine.affirmNoTopicResponse = cont.affirmNoTopic;
+        if (cont.decline) engine.declineResponse = cont.decline;
+      }
+    }
+
     engine.train();
   } catch (err) {
     console.error('Error loading chatbot dataset:', err);

@@ -138,9 +138,13 @@
       "contact details",
       "how do i reach sdit",
       "what is the phone number and email id of the college",
-      "directions to sdit"
+      "directions to sdit",
+      "what is the website of sdit",
+      "sdit website",
+      "website",
+      "sdit.ac.in"
     ],
-    "response": "SDIT is located at Airport Road, Kenjar, Mangalore - 574142, Karnataka. Phone: +91 (824) 2254104 / 2254102. Mobile: +91 91411 81260 / 81261. Email: info@sdc.ac.in. Need directions or anything else?"
+    "response": "SDIT is located at Airport Road, Kenjar, Mangalore - 574142, Karnataka. Phone: +91 (824) 2254104 / 2254102. Mobile: +91 91411 81260 / 81261. Email: info@sdc.ac.in. Website: sdit.ac.in. Need directions or anything else?"
   },
   {
     "tag": "campus_facilities",
@@ -170,7 +174,15 @@
       "co curricular",
       "extracurricular",
       "cultural events",
-      "college life"
+      "college life",
+      "are there any fests",
+      "technical fest",
+      "cultural fest",
+      "student clubs",
+      "nss ncc",
+      "what events happen at sdit",
+      "festivals at sdit",
+      "annual day celebration"
     ],
     "response": "Beyond academics, SDIT has co-curricular activities, sports, cultural events, and community initiatives. Students can explore interests, develop leadership skills, and participate in industry visits and internship programs through the placement cell. Curious about sports or specific clubs?"
   },
@@ -187,9 +199,12 @@
       "commands",
       "what do you know about",
       "what questions can i ask you",
-      "guide"
+      "guide",
+      "what are your features",
+      "how does this work",
+      "start"
     ],
-    "response": "I can help you with: (1) College Info — about SDIT, vision, mission, affiliation, CET codes; (2) Departments — CSE, AIML, ISE, AI&DS, ECE, Mechanical, Civil, Aeronautical, MBA, MCA, M.Tech, PhD; (3) Admissions — eligibility, documents, how to apply; (4) Campus — hostel, labs, library, sports, canteen, transport; (5) Placements — stats, recruiters, training. Just ask naturally!"
+    "response": "I can help you with: (1) College Info — about SDIT, vision, mission, affiliation, CET codes, faculty; (2) Departments — CSE, AIML, ISE, AI&DS, ECE, Mechanical, Civil, Aeronautical, MBA, MCA, M.Tech, PhD; (3) Admissions — eligibility, documents, how to apply, fees; (4) Campus — hostel, labs, library, sports, canteen, transport; (5) Placements — stats, recruiters, training, internships. Just ask naturally!"
   },
   {
     "tag": "principal",
@@ -198,8 +213,29 @@
       "principal of sdit",
       "tell me about the principal",
       "principal",
-      "head of institution"
+      "head of institution",
+      "who heads the college"
     ],
     "response": "For details about SDIT's Principal, visit sdit.ac.in/principals-message/. Is there anything else I can help with?"
+  },
+  {
+    "tag": "faculty",
+    "patterns": [
+      "tell me about the faculty",
+      "who are the faculty members",
+      "how are the professors at sdit",
+      "are the faculty qualified",
+      "faculty quality",
+      "professors",
+      "teachers",
+      "teaching staff",
+      "faculty qualifications",
+      "how experienced are the faculty",
+      "faculty member",
+      "about faculty",
+      "how are the teachers",
+      "is the teaching staff good"
+    ],
+    "response": "SDIT's faculty members are experienced, dedicated, and passionate about teaching and research. They serve as mentors and role models, guiding students through their academic journey. The well-qualified staff augments the state-of-the-art laboratories and infrastructure to support effective learning."
   }
 ]

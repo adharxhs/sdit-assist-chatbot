@@ -50,7 +50,6 @@
     'ds': 'data science',
     'ise': 'information science engineering',
     'ec': 'electronics communication',
-    'me': 'mechanical engineering',
     'mech': 'mechanical engineering',
     'ce': 'civil engineering',
     'aero': 'aeronautical engineering',
@@ -101,6 +100,68 @@
   var BYE_PHRASES = [
     'see you', 'see ya', 'good bye', 'bye bye', 'catch you later'
   ];
+
+  var AFFIRM_WORDS = new Set([
+    'yes', 'yeah', 'yep', 'yup', 'yass', 'affirmative', 'sure', 'ok', 'okay',
+    'alright', 'absolutely', 'definitely', 'agreed', 'certainly', 'continue',
+    'more', 'again', 'works', 'sounds', 'great'
+  ]);
+
+  var AFFIRM_PHRASES = [
+    'tell me more', 'yes please', 'go on', 'sounds good', 'i want more',
+    'keep going', 'more details', 'i am interested', 'please continue',
+    'yes tell me', 'sure why not', 'i would like to know more', 'want more',
+    'give me more', 'id love to know more'
+  ];
+
+  var AFFIRM_ALLOWED = new Set([
+    'yes', 'yeah', 'yep', 'yup', 'yass', 'affirmative', 'sure', 'ok', 'okay',
+    'alright', 'absolutely', 'definitely', 'agreed', 'certainly', 'continue',
+    'more', 'again', 'tell', 'me', 'please', 'go', 'on', 'keep', 'going',
+    'to', 'know', 'want', 'like', 'would', 'i', 'am', 'im', 'sounds', 'good',
+    'why', 'not', 'details', 'interested', 'about', 'some', 'love', 'd',
+    'do', 'you', 'that', 'works', 'great', 'thanks', 'nice', 'perfect',
+    'this', 'plan', 'works'
+  ]);
+
+  var DECLINE_WORDS = new Set([
+    'no', 'nah', 'nope', 'nty', 'done', 'enough', 'none', 'not', 'finish'
+  ]);
+
+  var DECLINE_PHRASES = [
+    'nothing else', 'no thanks', 'no thank you', 'that is all', "that's all",
+    'thats all', 'not now', 'i am done', 'i am good', 'maybe later',
+    'that is it', "that's it", 'thats it', 'i am fine', 'we are done',
+    'no help needed', 'i am set', 'all good', 'nothing more'
+  ];
+
+  var DECLINE_ALLOWED = new Set([
+    'no', 'nah', 'nope', 'nty', 'done', 'enough', 'none', 'not', 'finish',
+    'nothing', 'else', 'thanks', 'thank', 'you', 'that', 'is', 'all',
+    'thats', 'it', 'now', 'i', 'am', 'im', 'good', 'maybe', 'later', 'fine',
+    'we', 'are', 'help', 'needed', 'set', 's', 'more', 'all'
+  ]);
+
+  var HELP_WORDS = new Set([
+    'help', 'menu', 'options', 'guide', 'commands', 'topics'
+  ]);
+
+  var HELP_PHRASES = [
+    'what can you do', 'what topics can you answer', 'what can i ask',
+    'how to use', 'what do you know about', 'what questions can i ask you',
+    'can you help me', 'show me options', 'what can i do', 'help menu',
+    'what are the options'
+  ];
+
+  var HELP_ALLOWED = new Set([
+    'help', 'menu', 'options', 'guide', 'commands', 'topics', 'can', 'you',
+    'do', 'i', 'ask', 'what', 'how', 'to', 'use', 'know', 'about',
+    'questions', 'me', 'show', 'are', 'the', 'with', 'a', 'list'
+  ]);
+
+  var DISCARD_WORDS = new Set(
+    Array.from(AFFIRM_WORDS).concat(Array.from(DECLINE_WORDS))
+  );
 
   function stemWord(word) {
     if (word.length <= 3) return word;
@@ -168,6 +229,24 @@
     return false;
   }
 
+  function isPureExpression(cleanWords, normalized, wordSet, phraseList, allowed) {
+    allowed = allowed || wordSet;
+    var triggered = matchesAnyWord(cleanWords, wordSet);
+    if (!triggered) {
+      for (var i = 0; i < phraseList.length; i++) {
+        if (normalized.indexOf(phraseList[i]) !== -1) {
+          triggered = true;
+          break;
+        }
+      }
+    }
+    if (!triggered) return false;
+    for (var j = 0; j < cleanWords.length; j++) {
+      if (!allowed.has(cleanWords[j])) return false;
+    }
+    return true;
+  }
+
   var SESSION_KEY = 'sdit_assist_session';
 
   class IntentEngine {
@@ -181,6 +260,10 @@
       this.greetingResponse = config.greetingResponse || "Hello! Welcome to SDIT Assist. I can help you with information about Shree Devi Institute of Technology. Ask me about courses & departments, admissions & eligibility, campus facilities, placements, or general college info!";
       this.thanksResponse = config.thanksResponse || "You're welcome! Feel free to ask if you have more questions about SDIT.";
       this.byeResponse = config.byeResponse || "Goodbye! Thank you for using SDIT Assist. Have a great day!";
+      this.affirmContinuations = config.affirmContinuations || {};
+      this.affirmNoTopicResponse = config.affirmNoTopicResponse || "Sure — what would you like to know? I can help with college info, departments, admissions & eligibility, campus facilities, or placements. Just ask naturally!";
+      this.declineResponse = config.declineResponse || "No problem! I'm here whenever you have more questions about SDIT. You can ask me about departments, admissions, campus facilities, or placements anytime.";
+      this.helpMenuResponse = config.helpMenuResponse || null;
       this.k1 = typeof config.k1 === 'number' ? config.k1 : 1.5;
       this.b = typeof config.b === 'number' ? config.b : 0.75;
       this.documents = [];
@@ -215,6 +298,10 @@
       for (var j = 0; j < items.length; j++) {
         var item = items[j];
         if (!item || !item.tag || !Array.isArray(item.patterns)) continue;
+        if (item.tag === 'help_menu') {
+          this.helpMenuResponse = item.response || this.helpMenuResponse;
+          continue;
+        }
         this.documents.push({
           tag: item.tag,
           category: categoryName || item.category || 'general',
@@ -298,6 +385,16 @@
       } catch (e) {}
     }
 
+    _appendHistory(state, userText, botText) {
+      if (!Array.isArray(state.history)) state.history = [];
+      state.history.push({ role: 'user', text: userText }, { role: 'bot', text: botText });
+      var MAX_HISTORY = 40;
+      if (state.history.length > MAX_HISTORY) {
+        state.history = state.history.slice(-MAX_HISTORY);
+      }
+      return state;
+    }
+
     _matchCategoryScoped(queryTf, category) {
       var bestScore = 0;
       var bestDoc = null;
@@ -328,7 +425,7 @@
       if (matchesAnyWord(cleanWords, GREETING_WORDS) || matchesAnyPhrase(normalized, GREETING_PHRASES)) {
         var hasContentWords = false;
         for (var g = 0; g < cleanWords.length; g++) {
-          if (!GREETING_WORDS.has(cleanWords[g]) && cleanWords[g] !== 'good' && cleanWords[g] !== 'morning' && cleanWords[g] !== 'afternoon' && cleanWords[g] !== 'evening' && cleanWords[g] !== 'day') {
+          if (!GREETING_WORDS.has(cleanWords[g]) && cleanWords[g] !== 'good' && cleanWords[g] !== 'morning' && cleanWords[g] !== 'afternoon' && cleanWords[g] !== 'evening' && cleanWords[g] !== 'day' && cleanWords[g] !== 'there' && cleanWords[g] !== 'how' && cleanWords[g] !== 'are' && cleanWords[g] !== 'you' && cleanWords[g] !== 'doing' && cleanWords[g] !== 'guys') {
             hasContentWords = true;
             break;
           }
@@ -336,7 +433,7 @@
         if (!hasContentWords) {
           var sessionState = this._getSessionState();
           sessionState.lastTopic = 'greeting';
-          sessionState.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: this.greetingResponse });
+          this._appendHistory(sessionState, userQuery, this.greetingResponse);
           this._setSessionState(sessionState);
           return { match: true, intent: { tag: 'greeting' }, score: 1, category: 'greeting', response: this.greetingResponse };
         }
@@ -352,7 +449,7 @@
         }
         if (!hasThanksContent) {
           var sessionState2 = this._getSessionState();
-          sessionState2.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: this.thanksResponse });
+          this._appendHistory(sessionState2, userQuery, this.thanksResponse);
           this._setSessionState(sessionState2);
           return { match: true, intent: { tag: 'thanks' }, score: 1, category: 'thanks', response: this.thanksResponse };
         }
@@ -361,17 +458,57 @@
       if (matchesAnyWord(cleanWords, BYE_WORDS) || matchesAnyPhrase(normalized, BYE_PHRASES)) {
         var hasByeContent = false;
         for (var b = 0; b < cleanWords.length; b++) {
-          if (!BYE_WORDS.has(cleanWords[b]) && cleanWords[b] !== 'see' && cleanWords[b] !== 'you' && cleanWords[b] !== 'ya' && cleanWords[b] !== 'good' && cleanWords[b] !== 'catch') {
+          if (!BYE_WORDS.has(cleanWords[b]) && cleanWords[b] !== 'see' && cleanWords[b] !== 'you' && cleanWords[b] !== 'ya' && cleanWords[b] !== 'good' && cleanWords[b] !== 'catch' && cleanWords[b] !== 'ok' && cleanWords[b] !== 'okay' && cleanWords[b] !== 'thanks') {
             hasByeContent = true;
             break;
           }
         }
         if (!hasByeContent) {
           var sessionState3 = this._getSessionState();
-          sessionState3.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: this.byeResponse });
+          this._appendHistory(sessionState3, userQuery, this.byeResponse);
           this._setSessionState(sessionState3);
           return { match: true, intent: { tag: 'bye' }, score: 1, category: 'bye', response: this.byeResponse };
         }
+      }
+
+      if (isPureExpression(cleanWords, normalized, HELP_WORDS, HELP_PHRASES, HELP_ALLOWED)) {
+        var helpResp = this.helpMenuResponse || this.fallbackResponse;
+        var helpState = this._getSessionState();
+        this._appendHistory(helpState, userQuery, helpResp);
+        this._setSessionState(helpState);
+        return { match: true, intent: { tag: 'help_menu' }, score: 1, category: 'help', response: helpResp };
+      }
+
+      if (isPureExpression(cleanWords, normalized, AFFIRM_WORDS, AFFIRM_PHRASES, AFFIRM_ALLOWED)) {
+        var affirmState = this._getSessionState();
+        var continuation = affirmState.lastTopic && this.affirmContinuations[affirmState.lastTopic];
+        var affirmResp;
+        var affirmTag;
+        if (continuation) {
+          affirmResp = continuation;
+          affirmTag = 'continue_' + affirmState.lastTopic;
+        } else {
+          affirmResp = this.helpMenuResponse || this.affirmNoTopicResponse;
+          affirmTag = 'help_menu';
+        }
+        this._appendHistory(affirmState, userQuery, affirmResp);
+        this._setSessionState(affirmState);
+        return {
+          match: true,
+          intent: { tag: affirmTag },
+          score: 1,
+          category: affirmState.lastTopic || 'help',
+          contextUsed: !!continuation,
+          response: affirmResp
+        };
+      }
+
+      if (isPureExpression(cleanWords, normalized, DECLINE_WORDS, DECLINE_PHRASES, DECLINE_ALLOWED)) {
+        var declineState = this._getSessionState();
+        declineState.lastTopic = null;
+        this._appendHistory(declineState, userQuery, this.declineResponse);
+        this._setSessionState(declineState);
+        return { match: true, intent: { tag: 'decline' }, score: 1, category: 'decline', response: this.declineResponse };
       }
 
       var expandedQuery = expandAbbreviations(normalized);
@@ -383,6 +520,7 @@
 
       var queryTf = {};
       for (var i = 0; i < queryTokens.length; i++) {
+        if (DISCARD_WORDS.has(queryTokens[i])) continue;
         queryTf[queryTokens[i]] = (queryTf[queryTokens[i]] || 0) + 1;
       }
 
@@ -421,7 +559,7 @@
       } else {
         sessionState5.lastTopic = null;
       }
-      sessionState5.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: responseText });
+      this._appendHistory(sessionState5, userQuery, responseText);
       this._setSessionState(sessionState5);
 
       return {

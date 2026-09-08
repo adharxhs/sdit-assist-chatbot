@@ -14,7 +14,10 @@
       "recruitment",
       "job placement",
       "placed",
-      "i want to know about the overall placement scenario and track record of the college"
+      "i want to know about the overall placement scenario and track record of the college",
+      "placement record",
+      "are companies visiting",
+      "do companies come to campus"
     ],
     "response": "SDIT maintains an excellent placement record with 90-95% of eligible students placed through campus drives. Placements start in the 7th semester, with top companies from IT, engineering, finance, and consulting participating. The college also hosts pool campus drives. Want details on recruiters or training?"
   },
@@ -75,13 +78,13 @@
     "patterns": [
       "who is the placement officer",
       "who is the tpo at sdit",
-      "contact placement department",
       "name of the placement officer",
-      "tpo contact details",
+      "tpo phone number",
       "tpo",
       "placement officer",
       "training and placement officer",
-      "who heads the placement department"
+      "who heads the placement department",
+      "how to reach the placement cell"
     ],
     "response": "The Training & Placement Officer (TPO) is Mr. Roshal Lynshal Nazareth. The department handles campus recruitment, pool drives, industry interaction, and career guidance. Need to get in touch with the placement cell?"
   },
@@ -108,5 +111,23 @@
       "placement department mission"
     ],
     "response": "The Placement Department aims to develop students' technical and interpersonal skills, build industry partnerships, provide quality manpower to organizations, and serve as a single window for career counselling and higher learning opportunities."
+  },
+  {
+    "tag": "internships",
+    "patterns": [
+      "are there internship opportunities",
+      "does sdit offer internships",
+      "tell me about internships",
+      "how to get an internship",
+      "internship programs",
+      "internship opportunities",
+      "summer internship",
+      "industrial training",
+      "industry exposure",
+      "are internships offered at sdit",
+      "how does the college help students get internships",
+      "work experience during college"
+    ],
+    "response": "The Placement & Training department assists students in finding internships for projects. Students in their 2nd, 3rd, and final years are encouraged to gain industry exposure through internships and industrial visits, bridging theory and practice. Want to know about placement training or specific opportunities?"
   }
 ]

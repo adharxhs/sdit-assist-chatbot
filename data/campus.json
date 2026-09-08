@@ -73,7 +73,12 @@
       "boarding",
       "stay",
       "residence",
-      "hostels"
+      "hostels",
+      "girls hostel",
+      "boys hostel",
+      "separate hostel",
+      "hostel for girls",
+      "is hostel available for girls"
     ],
     "response": "Yes, SDIT provides hostel accommodation on campus for outstation students. The facilities are designed to be comfortable and convenient. Want details on room types or the application process?"
   },
