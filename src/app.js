@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     welcomeTime.textContent = getFormattedTime();
   }
 
-  // Instantiate the matching engine with lowered threshold
+  // Instantiate the matching engine (BM25 threshold)
   const engine = new IntentEngine({
-    threshold: 0.20,
+    threshold: 1.0,
     fallbackResponse: "I'm sorry, I couldn't find specific information for your query in the SDIT records. Try asking about:\n\n• Courses & Departments (CSE, ISE, AIML, ECE, ME, CE, Aero, MBA, MCA, M.Tech, PhD)\n• Admissions & Eligibility (BE, MBA, MCA, M.Tech, documents required)\n• Campus Facilities (hostel, labs, library, sports, canteen, transport)\n• Placements (statistics, top recruiters, TPO info, training)"
   });
 

@@ -13,7 +13,7 @@
       "how can i take admission in sdit",
       "could you walk me through the entire admission process step by step"
     ],
-    "response": "Admissions at SDIT are available for B.E, MBA, MCA, and M.Tech programs. For B.E: minimum 45% in PCM at PUC (40% for SC/ST/OBC). For MBA: minimum 50% in bachelor's degree (45% for SC/ST/Cat-I Karnataka). For MCA: minimum 50% in BCA/B.Sc/B.Com/B.A (45% for SC/ST/Cat-I). For M.Tech: minimum 50% in qualifying exam with valid GATE score (45% for SC/ST/Cat-I). Apply online at sdit.ac.in/application-form. CET Code: E146."
+    "response": "Admissions are open for B.E, MBA, MCA, and M.Tech. For B.E: minimum 45% in PCM at PUC (40% for reserved categories). For MBA/MCA: minimum 50% in bachelor's degree (45% for reserved). For M.Tech: 50% in qualifying exam with valid GATE score. Apply online at sdit.ac.in/application-form. Need eligibility details for a specific program?"
   },
   {
     "tag": "eligibility_be",
@@ -31,7 +31,7 @@
       "what marks do i need to get into the be program at sdit",
       "be admission requirements"
     ],
-    "response": "For B.E admission: a candidate must have passed Pre-University Board or equivalent examination with a minimum of 45% aggregate marks in Physics, Chemistry & Mathematics. For SC/ST and OBC categories, the minimum is 40%. CET Code: E146."
+    "response": "For B.E admission, you need minimum 45% aggregate in Physics, Chemistry & Mathematics at PUC or equivalent. For SC/ST/OBC, it's 40%. CET Code: E146. Want to know about the application process?"
   },
   {
     "tag": "eligibility_mba",
@@ -46,7 +46,7 @@
       "mba criteria",
       "what qualifications are needed for the mba program"
     ],
-    "response": "For MBA admission: a candidate must have a Bachelor's Degree (minimum 3 years) with an aggregate minimum of 50% marks in all subjects including languages. For SC, ST and Category-I Karnataka candidates, the minimum is 45%. PGCET Code: B281."
+    "response": "For MBA, you need a bachelor's degree (minimum 3 years) with at least 50% aggregate (45% for SC/ST/Category-I Karnataka candidates). PGCET Code: B281. Need details on the admission process?"
   },
   {
     "tag": "eligibility_mca",
@@ -61,7 +61,7 @@
       "mca criteria",
       "what qualifications do i need for the mca course"
     ],
-    "response": "For MCA admission: candidates must have passed BCA, B.E in Computer Science, or equivalent, or B.Sc/B.Com/B.A preferably with Mathematics, with an aggregate minimum of 50% marks. Students without Mathematics background must complete bridge courses as notified by the university. For SC/ST/Category-I Karnataka candidates, the minimum is 45%. PGCET Code: C476."
+    "response": "For MCA, you need BCA, B.E in Computer Science, or equivalent — or B.Sc/B.Com/B.A preferably with Mathematics, with minimum 50% (45% for reserved categories). Students without Maths must complete bridge courses. PGCET Code: C476."
   },
   {
     "tag": "eligibility_mtech",
@@ -77,7 +77,7 @@
       "gate score for mtech",
       "what are the requirements for the mtech program"
     ],
-    "response": "For M.Tech admission: a candidate must have passed the qualifying examination with an aggregate minimum of 50% marks. A valid GATE score is required. For SC/ST/Category-I Karnataka candidates, the minimum is 45%. PGCET Code: T868."
+    "response": "For M.Tech, you need minimum 50% in the qualifying exam with a valid GATE score (45% for reserved categories). PGCET Code: T868. Want to know about the application process?"
   },
   {
     "tag": "documents_required",
@@ -93,7 +93,7 @@
       "what papers do i need to bring for admission",
       "admission document list"
     ],
-    "response": "Documents required for B.E admission: Original SSLC (Secondary School Leaving Certificate), Original PUC (Pre-University Certificate), Photocopy of Aadhaar Card, Original Transfer Certificate (TC) and Conduct Certificate, Passport size photograph, and Migration Certificate (for non-Karnataka students). For PG programs (MBA/MCA/M.Tech): additionally, original undergraduate degree marks cards and provisional course clearance certificate."
+    "response": "For B.E: Original SSLC, Original PUC, Aadhaar photocopy, TC & Conduct Certificate, passport photo, and Migration Certificate (for non-Karnataka students). For MBA/MCA/M.Tech: additionally, original UG marks cards and provisional certificate. Anything else you need?"
   },
   {
     "tag": "how_to_apply",
@@ -111,7 +111,7 @@
       "application",
       "how do i submit my application to sdit"
     ],
-    "response": "You can apply to SDIT through the official application form available at sdit.ac.in/application-form. There is also an 'Apply Now' link on the website for quick access. CET Code: E146, PGCET: MBA - B281, MCA - C476, M.Tech - T868."
+    "response": "Apply online at sdit.ac.in/application-form. There's also an 'Apply Now' link on the website. CET Code: E146. PGCET codes: MBA - B281, MCA - C476, M.Tech - T868. Need help with the form?"
   },
   {
     "tag": "fees",
@@ -127,6 +127,6 @@
       "tuition",
       "what is the fee structure for the various programs at sdit"
     ],
-    "response": "For detailed fee structure information, please contact SDIT directly at +91 (824) 2254104 / +91 (824) 2254102 or visit sdit.ac.in. Fees vary by program (B.E, MBA, MCA, M.Tech) and are subject to government regulations."
+    "response": "For detailed fee information, please contact SDIT directly at +91 (824) 2254104 or visit sdit.ac.in. Fees vary by program and are set according to government regulations. Anything else I can help with?"
   }
 ]

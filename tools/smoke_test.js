@@ -2,7 +2,7 @@ const IntentEngine = require('../src/engine.js');
 const fs = require('fs');
 const path = require('path');
 
-const THRESHOLD = 0.35;
+const THRESHOLD = 1.0;
 
 const engine = new IntentEngine({ threshold: THRESHOLD });
 

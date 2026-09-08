@@ -13,7 +13,7 @@
       "how many departments",
       "could you please provide me with a complete list of all the departments and programs available at sdit"
     ],
-    "response": "SDIT offers the following departments: B.E in Computer Science & Engineering (CSE), CSE (Artificial Intelligence & Machine Learning), Information Science & Engineering (ISE), Artificial Intelligence & Data Science (AI&DS), Electronics & Communication Engineering (ECE), Mechanical Engineering (ME), Civil Engineering (CE), and Aeronautical Engineering. Postgraduate: M.Tech in Construction Technology, Master of Business Administration (MBA), Master of Computer Applications (MCA), and a Research Centre for PhD."
+    "response": "SDIT has these departments: B.E in Computer Science & Engineering (CSE), CSE (AI & ML), Information Science & Engineering (ISE), AI & Data Science, Electronics & Communication, Mechanical, Civil, and Aeronautical Engineering. Postgraduate: M.Tech (Construction Technology), MBA, MCA, and a PhD research centre. Want details on any specific department?"
   },
   {
     "tag": "dept_cse",
@@ -32,7 +32,7 @@
       "cse course details",
       "cse labs"
     ],
-    "response": "The Department of Computer Science and Engineering (CSE) was established in 2006 and offers a 4-year B.E degree. With world-class training and research, the department encourages students to take part in sponsored research projects through industry-institute collaboration. Lab facilities include Data Structure Lab, OOPS Lab, Electronics Circuits & Logic Design Lab, Microprocessor Lab, Operating Systems Lab, Computer Networking Lab, Algorithms Lab, DBMS Lab, System Programming Lab, and Internet Programming Lab."
+    "response": "Computer Science & Engineering (CSE) was established in 2006 and offers a 4-year B.E degree. The department focuses on practical skills through industry-sponsored research projects. Labs include data structures, operating systems, computer networking, DBMS, algorithms, and more. Would you like eligibility details?"
   },
   {
     "tag": "dept_cse_aiml",
@@ -49,7 +49,7 @@
       "cse ai",
       "tell me about the artificial intelligence and machine learning program offered under cse"
     ],
-    "response": "The Department of CSE (Artificial Intelligence & Machine Learning) was established to meet the increasing demand for computer professionals. It offers a 4-year B.E degree in CSE (AI & ML) with world-class training, research opportunities, and state-of-the-art facilities. The program covers machine learning algorithms, deep learning, natural language processing, and AI applications."
+    "response": "CSE (Artificial Intelligence & Machine Learning) offers a 4-year B.E program covering machine learning algorithms, deep learning, NLP, and AI applications. The department has modern labs and research opportunities. Interested in the curriculum or admission process?"
   },
   {
     "tag": "dept_ise",
@@ -65,7 +65,7 @@
       "ise course details",
       "could you explain what the information science and engineering program involves"
     ],
-    "response": "The Information Science & Engineering department enables connectivity of data across the globe, catering to domains requiring large data-intensive applications. It offers an eight-semester B.E degree as per VTU syllabus. Students are encouraged to visit IT exhibitions, participate in industry-sponsored seminars and conferences, and interact with industry representatives."
+    "response": "Information Science & Engineering focuses on data connectivity and large-scale data applications. The 4-year B.E program follows the VTU syllabus, with opportunities to participate in IT exhibitions, industry seminars, and conferences. Want to know about labs or faculty?"
   },
   {
     "tag": "dept_ai_data_science",
@@ -82,7 +82,7 @@
       "artificial intelligence data science",
       "i am interested in the artificial intelligence and data science course can you tell me about it"
     ],
-    "response": "The Department of Artificial Intelligence & Data Science was established to meet the growing demand for AI and data science professionals. It offers a 4-year B.E degree with world-class training, research opportunities, and state-of-the-art facilities, preparing students for careers in machine learning, big data analytics, and intelligent systems."
+    "response": "AI & Data Science is a 4-year B.E program preparing students for careers in machine learning, big data analytics, and intelligent systems. The department offers research opportunities and state-of-the-art labs. Curious about the admission requirements?"
   },
   {
     "tag": "dept_me",
@@ -96,9 +96,10 @@
       "mech",
       "mechanical engineering",
       "me department",
-      "i want detailed information about the mechanical engineering department and its lab facilities"
+      "i want detailed information about the mechanical engineering department and its lab facilities",
+      "what does mechanical engineering involve"
     ],
-    "response": "The Department of Mechanical Engineering applies principles of physics and materials science for analysis, design, manufacturing, and maintenance of mechanical systems. It is backed by well-developed laboratories including CAED Lab and CAMD Lab with state-of-the-art hardware and software, preparing students for diverse areas including designing and analyzing manufacturing plants, industrial equipment, robotics, medical devices, and more."
+    "response": "Mechanical Engineering applies physics and materials science to design, manufacturing, and maintenance of mechanical systems. Labs include CAED, CAMD, and more. Graduates work in manufacturing, robotics, automotive, and other industries. Want details on the curriculum?"
   },
   {
     "tag": "dept_ce",
@@ -113,7 +114,7 @@
       "ce department",
       "i would like to understand what the civil engineering program covers"
     ],
-    "response": "The Department of Civil Engineering emphasises quality education requiring a broad understanding of scientific principles, knowledge of materials, and the art of analysis and synthesis, along with research, teamwork, leadership, and business skills. Lab facilities include Basic Material Testing Lab, Surveying Practice Lab, Hydraulic Lab, CAD Lab, Environment Engineering Lab, and Geo-Tech Lab."
+    "response": "Civil Engineering at SDIT emphasises quality education in scientific principles, materials, analysis, and design. Labs include material testing, surveying, hydraulic, CAD, environmental, and geotech labs. Interested in the career opportunities?"
   },
   {
     "tag": "dept_ece",
@@ -129,7 +130,7 @@
       "ec department",
       "can you provide information about the electronics and communication engineering department"
     ],
-    "response": "The Department of Electronics & Communication Engineering imparts quality education to help students find openings in the Telecommunication and Computer industry. The B.E degree is affiliated to VTU. Lab facilities include Analog Electronics Lab, Logic Design Lab, Microcontrollers Lab, DSP Lab, VLSI Lab, and Power Electronics Lab."
+    "response": "Electronics & Communication Engineering prepares students for careers in telecommunications and computing. The B.E program is VTU-affiliated. Labs include analog electronics, logic design, microcontrollers, DSP, VLSI, and power electronics. Want to know about placements in this field?"
   },
   {
     "tag": "dept_aero",
@@ -146,7 +147,7 @@
       "flight engineering",
       "i am curious about the aeronautical engineering course and what it involves"
     ],
-    "response": "The Aeronautical Engineering department covers aircraft design, stability and control of aerospace vehicles, propulsion systems, low and high speed aerodynamics, and development of advanced technologies in defence and space science. Experienced faculty provide individual attention, and the department has adopted Project-Based Learning so students can apply creative problem-solving skills to real-world problems."
+    "response": "Aeronautical Engineering covers aircraft design, stability, propulsion, aerodynamics, and space technology. The department uses project-based learning so students solve real-world problems. Graduates work in defence, aerospace, and aviation industries. Curious about the labs?"
   },
   {
     "tag": "dept_mca",
@@ -162,7 +163,7 @@
       "mca course",
       "what is mca"
     ],
-    "response": "The Master of Computer Applications (MCA) program at SDIT is a two-year full-time course that includes interactive classes, national seminars, and outbound activities. It emphasizes practical experience through projects and internships. Graduates are prepared for careers in software development, IT consulting, and systems analysis. PGCET Code: C476."
+    "response": "MCA at SDIT is a 2-year full-time program with interactive classes, seminars, and practical projects. Graduates are prepared for careers in software development, IT consulting, and systems analysis. PGCET Code: C476. Want to check the eligibility criteria?"
   },
   {
     "tag": "dept_mba",
@@ -177,9 +178,10 @@
       "management course",
       "mba program",
       "what is mba",
-      "i would like to know about the mba program and the specialisations offered"
+      "i would like to know about the mba program and the specialisations offered",
+      "what is the mba program at sdit"
     ],
-    "response": "The MBA program at SDIT focuses on managerial aspects of accounting, finance, marketing, and management, with case studies and industrial visits incorporated into the syllabus. It equips students with practical skills, offering dual specialisations in areas like Marketing, Finance, and HR, preparing them for managerial positions in small businesses as well as multinational companies. PGCET Code: B281."
+    "response": "The MBA program covers accounting, finance, marketing, and management with case studies and industrial visits. Dual specialisations are available in Marketing, Finance, HR, and more. PGCET Code: B281. Would you like admission details?"
   },
   {
     "tag": "dept_mtech",
@@ -196,7 +198,7 @@
       "postgraduate engineering",
       "what is the mtech program about"
     ],
-    "response": "The M.Tech in Construction Technology prepares students with broad technical skills as well as business, communication, and management knowledge for the construction management field. Graduates can find employment in consultancy firms, quality testing labs, road projects, building work, or start their own independent consultancy services. PGCET Code: T868."
+    "response": "M.Tech in Construction Technology combines technical skills with management knowledge for construction projects. Graduates work in consultancy, quality testing, infrastructure, or start their own firms. PGCET Code: T868. Need info on eligibility or the application process?"
   },
   {
     "tag": "dept_phd",
@@ -213,7 +215,7 @@
       "research programs",
       "can i do a phd at sdit"
     ],
-    "response": "SDIT has established a Research Centre to facilitate research and knowledge generation and to build its presence in the international arena. The Physics Research Centre facilitates a strong Doctoral Program and research projects with active national and international research collaboration programs."
+    "response": "SDIT has a Research Centre facilitating doctoral programs and research projects with national and international collaboration. The Physics Research Centre is particularly active. Interested in research areas or how to apply?"
   },
   {
     "tag": "be_programs",
@@ -233,6 +235,6 @@
       "bachelor engineering",
       "engineering programs"
     ],
-    "response": "SDIT offers 4-year B.E (Bachelor of Engineering) programs in 8 branches: Computer Science & Engineering (CSE), CSE (AI & ML), Information Science & Engineering (ISE), Artificial Intelligence & Data Science (AI&DS), Electronics & Communication Engineering (ECE), Mechanical Engineering (ME), Civil Engineering (CE), and Aeronautical Engineering. Eligibility: minimum 45% aggregate in Physics, Chemistry & Mathematics at PUC level (40% for SC/ST/OBC). CET Code: E146."
+    "response": "SDIT offers 4-year B.E programs in 8 branches: CSE, CSE (AI & ML), ISE, AI & Data Science, ECE, Mechanical, Civil, and Aeronautical Engineering. Eligibility: minimum 45% in Physics, Chemistry & Mathematics at PUC (40% for SC/ST/OBC). CET Code: E146. Want details on a specific branch?"
   }
 ]

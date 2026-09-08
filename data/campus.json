@@ -13,7 +13,7 @@
       "what is the campus like",
       "can you describe the overall campus and its facilities in detail"
     ],
-    "response": "The SDIT campus features state-of-the-art classrooms, well-equipped laboratories, a seminar hall, an open air theatre, sports and games facilities, a canteen, a cafeteria, a recreational area, hostel accommodation, transportation services, and a library. The campus is set amidst the vibrant surroundings of suburban Mangalore with modern buildings housing excellent instructional facilities."
+    "response": "The campus has modern classrooms, well-equipped labs, a library, seminar hall, open-air theatre, sports facilities, canteen, cafeteria, recreational area, hostel, and college bus service. It's located in suburban Mangalore with excellent instructional facilities. Want details on any specific facility?"
   },
   {
     "tag": "classrooms",
@@ -27,7 +27,7 @@
       "lecture halls",
       "teaching rooms"
     ],
-    "response": "SDIT has state-of-the-art, well-equipped classrooms that provide a supportive environment for students' academic pursuits."
+    "response": "SDIT has modern, well-equipped classrooms designed to support effective learning. They're fitted with the necessary teaching aids and technology."
   },
   {
     "tag": "labs",
@@ -44,7 +44,7 @@
       "computer lab",
       "what kind of lab facilities and equipment does the college have"
     ],
-    "response": "SDIT has well-equipped laboratories across departments. These include: Data Structure Lab, OOPS Lab, Electronics Circuits & Logic Design Lab, Microprocessor Lab, Operating Systems Lab, Computer Networking Lab, Algorithms Lab, DBMS Lab, System Programming Lab, Internet Programming Lab, Analog Electronics Lab, Logic Design Lab, Microcontrollers Lab, DSP Lab, VLSI Lab, Power Electronics Lab, Basic Material Testing Lab, Surveying Practice Lab, Hydraulic Lab, CAD Lab, CAED Lab, CAMD Lab, Environment Engineering Lab, Geo-Tech Lab, and more."
+    "response": "SDIT has well-equipped labs across departments: Data Structure, OOPS, Electronics Circuits, Microprocessor, Operating Systems, Computer Networking, Algorithms, DBMS, System Programming, Internet Programming, Analog Electronics, Logic Design, DSP, VLSI, CAD, CAED, CAMD, Environmental Engineering, Geo-Tech, and more. Need info on a specific lab?"
   },
   {
     "tag": "library",
@@ -58,7 +58,7 @@
       "books",
       "reading room"
     ],
-    "response": "Yes, SDIT has a well-stocked library on campus for students and faculty, supporting academic studies and research."
+    "response": "Yes, SDIT has a well-stocked library supporting academic studies and research. Students and faculty have access to a range of books, journals, and digital resources."
   },
   {
     "tag": "hostel",
@@ -75,7 +75,7 @@
       "residence",
       "hostels"
     ],
-    "response": "Yes, SDIT provides hostel accommodation for students on campus. The hostel facilities are designed to offer a comfortable living environment for outstation students."
+    "response": "Yes, SDIT provides hostel accommodation on campus for outstation students. The facilities are designed to be comfortable and convenient. Want details on room types or the application process?"
   },
   {
     "tag": "sports",
@@ -91,7 +91,7 @@
       "sports facilities",
       "what sports activities and competitions does the college participate in"
     ],
-    "response": "SDIT provides adequate facilities for sporting activities to encourage all-round development. College sports teams have represented SDIT in various state and national level competitions and have brought home laurels. The college also hosts a state-level intercollegiate tournament which is very popular with the student fraternity."
+    "response": "SDIT has sports facilities for all-round development. College teams participate in state and national level competitions, and SDIT hosts a popular state-level intercollegiate tournament. Interested in a specific sport?"
   },
   {
     "tag": "transportation",
@@ -108,7 +108,7 @@
       "bus facility",
       "commute"
     ],
-    "response": "Yes, SDIT provides transportation facilities with college buses for students to commute to and from the campus."
+    "response": "Yes, SDIT provides college bus services for students to commute to and from campus. Routes cover major areas in and around Mangalore."
   },
   {
     "tag": "canteen",
@@ -125,7 +125,7 @@
       "eating",
       "food court"
     ],
-    "response": "The campus has both a canteen and a cafeteria offering food and refreshment facilities for students and staff."
+    "response": "The campus has both a canteen and a cafeteria offering food and refreshments for students and staff throughout the day."
   },
   {
     "tag": "seminar_hall",
@@ -140,7 +140,7 @@
       "event hall",
       "conference hall"
     ],
-    "response": "SDIT has a seminar hall on campus used for conducting seminars, workshops, company presentations during placement drives, and other academic events."
+    "response": "SDIT has a seminar hall used for workshops, company presentations during placements, and other academic events."
   },
   {
     "tag": "open_air_theatre",
@@ -154,7 +154,7 @@
       "amphitheatre",
       "outdoor theatre"
     ],
-    "response": "SDIT has an open air theatre on campus which is used for various cultural events, performances, student gatherings, and celebrations."
+    "response": "SDIT has an open-air theatre used for cultural events, performances, student gatherings, and celebrations."
   },
   {
     "tag": "recreational_area",
@@ -169,6 +169,6 @@
       "relaxation spot",
       "hangout"
     ],
-    "response": "The campus includes a recreational area where students can relax and unwind between classes."
+    "response": "The campus has a recreational area where students can relax between classes and unwind."
   }
 ]

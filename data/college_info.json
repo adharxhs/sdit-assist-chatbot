@@ -22,7 +22,7 @@
       "describe the college",
       "overview of sdit"
     ],
-    "response": "Shree Devi Institute of Technology (SDIT), Kenjar Mangalore, is a premier institution dedicated to excellence in engineering education and holistic development. Established in 2006, SDIT is affiliated to Visvesvaraya Technological University (VTU) and recognized by AICTE. The institution offers B.E, M.Tech, MBA, MCA and PhD programs in an environment that fosters innovation, creativity, and leadership. The campus features state-of-the-art laboratories, modern infrastructure, experienced faculty, and a strong placement cell with industry partnerships."
+    "response": "Shree Devi Institute of Technology (SDIT) is an engineering college in Kenjar, Mangalore, established in 2006. It's affiliated to VTU and recognized by AICTE. SDIT offers B.E, M.Tech, MBA, MCA, and PhD programs with modern labs, experienced faculty, and strong industry partnerships for placements. Want details on any specific program?"
   },
   {
     "tag": "programs_offered",
@@ -44,7 +44,7 @@
       "i would like to know what courses or programs sdit has available for students",
       "show me all available programs"
     ],
-    "response": "SDIT offers the following programs: B.E in Computer Science & Engineering, CSE (Artificial Intelligence & Machine Learning), Information Science & Engineering, Artificial Intelligence & Data Science, Electronics & Communication Engineering, Mechanical Engineering, Civil Engineering, and Aeronautical Engineering. Postgraduate programs include M.Tech in Construction Technology, MBA (with dual specialisations), and MCA. A Research Centre for PhD is also available. CET Code: E146, PGCET codes: MBA - B281, MCA - C476, M.Tech - T868."
+    "response": "SDIT offers B.E in CSE, CSE (AI & ML), ISE, AI & Data Science, ECE, Mechanical, Civil, and Aeronautical Engineering. Postgraduate programs: M.Tech (Construction Technology), MBA, and MCA. A PhD research centre is also available. CET Code: E146. Would you like eligibility details for any of these?"
   },
   {
     "tag": "established_year",
@@ -60,7 +60,7 @@
       "year of establishment",
       "when did sdit begin operations"
     ],
-    "response": "Shree Devi Institute of Technology was established in 2006. Since its founding, it has emerged as a beacon of quality education affiliated to VTU and recognized by AICTE."
+    "response": "SDIT was established in 2006. It's affiliated to Visvesvaraya Technological University and recognized by AICTE."
   },
   {
     "tag": "affiliation",
@@ -80,7 +80,7 @@
       "which university does sdit come under",
       "tell me about the accreditation and affiliation status of the college"
     ],
-    "response": "Shree Devi Institute of Technology is affiliated to Visvesvaraya Technological University (VTU) and recognized by AICTE, ensuring that its programs adhere to the highest academic standards and industry relevance."
+    "response": "SDIT is affiliated to Visvesvaraya Technological University (VTU) and recognized by AICTE. The programs follow VTU curriculum and meet national standards for technical education."
   },
   {
     "tag": "cet_code",
@@ -94,7 +94,7 @@
       "e146",
       "what is the cet code i need to use when applying to sdit"
     ],
-    "response": "The CET code of Shree Devi Institute of Technology is E146. PGCET codes: MBA - B281, MCA - C476, M.Tech - T868."
+    "response": "SDIT's CET code is E146. PGCET codes: MBA - B281, MCA - C476, M.Tech - T868. You'll need these when filling out your counseling options."
   },
   {
     "tag": "vision",
@@ -106,7 +106,7 @@
       "vision",
       "what is sdit's vision"
     ],
-    "response": "The vision of SDIT is to be an institution of academic excellence imparting technical and management education integrated with human values to face the social and environmental challenges."
+    "response": "SDIT's vision is to be an institution of academic excellence, imparting technical and management education integrated with human values to address social and environmental challenges."
   },
   {
     "tag": "mission",
@@ -118,7 +118,7 @@
       "mission",
       "what is the mission"
     ],
-    "response": "The mission of SDIT is to: disseminate quality education with student-centric learning methodologies; actively engage and encourage students, faculty and staff; mentor students and provide career development support; and impart education that transforms students and empowers them to emerge as professionals by inculcating entrepreneurial attitudes with social and ethical values."
+    "response": "SDIT's mission focuses on quality education through student-centric learning, active student-faculty engagement, career mentoring, and instilling entrepreneurial attitudes with social and ethical values."
   },
   {
     "tag": "contact_info",
@@ -140,7 +140,7 @@
       "what is the phone number and email id of the college",
       "directions to sdit"
     ],
-    "response": "SDIT is located at Airport Road, Kenjar, Mangalore - 574142, Karnataka, India. Phone: +91 (824) 2254104 / +91 (824) 2254102. Trust Office: 0824-2456501 / 0824-2456511 / 0824-2457937. Mobile: +91 91411 81260 / +91 91411 81261. Email: info@sdc.ac.in"
+    "response": "SDIT is located at Airport Road, Kenjar, Mangalore - 574142, Karnataka. Phone: +91 (824) 2254104 / 2254102. Mobile: +91 91411 81260 / 81261. Email: info@sdc.ac.in. Need directions or anything else?"
   },
   {
     "tag": "campus_facilities",
@@ -155,7 +155,7 @@
       "what does the campus have",
       "can you give me a comprehensive overview of all the facilities and infrastructure at sdit"
     ],
-    "response": "The SDIT campus includes state-of-the-art classrooms, well-equipped laboratories, a seminar hall, an open air theatre, sports and games facilities, a canteen and cafeteria, a recreational area, hostel accommodation, transportation services, and a library. The campus is set amidst the vibrant surroundings of suburban Mangalore with modern buildings housing excellent instructional facilities."
+    "response": "The campus has modern classrooms, well-equipped labs, a library, seminar hall, open-air theatre, sports facilities, canteen, cafeteria, recreational area, hostel, and college bus service. Want details on any specific facility?"
   },
   {
     "tag": "campus_life",
@@ -172,7 +172,7 @@
       "cultural events",
       "college life"
     ],
-    "response": "Beyond academics, SDIT offers a vibrant campus life enriched with co-curricular activities, sports, cultural events, and community engagement initiatives. The college believes in holistic development, encouraging students to explore their interests, develop leadership skills, and contribute positively to society. Strong industry partnerships and a robust placement cell provide internship opportunities, industrial visits, and placement assistance."
+    "response": "Beyond academics, SDIT has co-curricular activities, sports, cultural events, and community initiatives. Students can explore interests, develop leadership skills, and participate in industry visits and internship programs through the placement cell. Curious about sports or specific clubs?"
   },
   {
     "tag": "help_menu",
@@ -189,7 +189,7 @@
       "what questions can i ask you",
       "guide"
     ],
-    "response": "I can help you with information about SDIT in these areas: (1) College Info - about SDIT, vision, mission, affiliation, CET code, contact details. (2) Departments - CSE, CSE-AIML, ISE, AI&DS, ECE, Mechanical, Civil, Aeronautical, MBA, MCA, M.Tech, PhD. (3) Admissions - eligibility for BE, MBA, MCA, M.Tech, documents required, how to apply. (4) Campus - classrooms, labs, library, hostel, sports, canteen, transport. (5) Placements - statistics, recruiters, training, TPO info. Just ask naturally!"
+    "response": "I can help you with: (1) College Info — about SDIT, vision, mission, affiliation, CET codes; (2) Departments — CSE, AIML, ISE, AI&DS, ECE, Mechanical, Civil, Aeronautical, MBA, MCA, M.Tech, PhD; (3) Admissions — eligibility, documents, how to apply; (4) Campus — hostel, labs, library, sports, canteen, transport; (5) Placements — stats, recruiters, training. Just ask naturally!"
   },
   {
     "tag": "principal",
@@ -200,6 +200,6 @@
       "principal",
       "head of institution"
     ],
-    "response": "For details about the Principal of Shree Devi Institute of Technology, please visit the official website at sdit.ac.in/principals-message/."
+    "response": "For details about SDIT's Principal, visit sdit.ac.in/principals-message/. Is there anything else I can help with?"
   }
 ]

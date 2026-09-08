@@ -1,5 +1,5 @@
 /**
- * Reusable TF-IDF + Cosine Similarity Matching Engine
+ * BM25 + Session Context Tracking Matching Engine
  * Fully client-side, zero runtime external dependencies.
  * Compatible with Browser script tags, ESM, and Node.js CommonJS.
  */
@@ -49,8 +49,6 @@
     'ai&ds': 'artificial intelligence data science',
     'ds': 'data science',
     'ise': 'information science engineering',
-    'is': 'information science',
-    'ece': 'electronics communication engineering',
     'ec': 'electronics communication',
     'me': 'mechanical engineering',
     'mech': 'mechanical engineering',
@@ -170,10 +168,12 @@
     return false;
   }
 
+  var SESSION_KEY = 'sdit_assist_session';
+
   class IntentEngine {
     constructor(config) {
       config = config || {};
-      this.threshold = typeof config.threshold === 'number' ? config.threshold : 0.2;
+      this.threshold = typeof config.threshold === 'number' ? config.threshold : 5.0;
       this.fallbackResponse = config.fallbackResponse || "I'm sorry, I couldn't find specific information for your query. You can ask me about: college info, departments (CSE, ISE, AIML, ECE, ME, CE, Aero, MBA, MCA, M.Tech, PhD), admissions & eligibility, campus facilities, or placements.";
       this.stopWords = config.stopWords || DEFAULT_STOP_WORDS;
       this.indexResponse = config.indexResponse !== undefined ? config.indexResponse : true;
@@ -181,9 +181,13 @@
       this.greetingResponse = config.greetingResponse || "Hello! Welcome to SDIT Assist. I can help you with information about Shree Devi Institute of Technology. Ask me about courses & departments, admissions & eligibility, campus facilities, placements, or general college info!";
       this.thanksResponse = config.thanksResponse || "You're welcome! Feel free to ask if you have more questions about SDIT.";
       this.byeResponse = config.byeResponse || "Goodbye! Thank you for using SDIT Assist. Have a great day!";
+      this.k1 = typeof config.k1 === 'number' ? config.k1 : 1.5;
+      this.b = typeof config.b === 'number' ? config.b : 0.75;
       this.documents = [];
-      this.idf = {};
-      this.vocabulary = new Set();
+      this.docFreqs = {};
+      this.docLengths = [];
+      this.avgDocLength = 0;
+      this.numDocs = 0;
       this.isTrained = false;
     }
 
@@ -227,21 +231,22 @@
         this.isTrained = true;
         return;
       }
-      var numDocs = this.documents.length;
-      var docTermFreqs = [];
-      var docFrequencies = {};
-      this.vocabulary.clear();
+      this.numDocs = this.documents.length;
+      this.docFreqs = {};
+      this.docLengths = [];
+      var totalLength = 0;
 
-      for (var d = 0; d < numDocs; d++) {
+      for (var d = 0; d < this.numDocs; d++) {
         var doc = this.documents[d];
         var tf = {};
+        var docLen = 0;
         for (var p = 0; p < doc.patterns.length; p++) {
           var expanded = expandAbbreviations(normalizeInput(doc.patterns[p]));
           var patternTokens = this.preprocess(expanded);
           for (var t = 0; t < patternTokens.length; t++) {
             var term = patternTokens[t];
-            tf[term] = (tf[term] || 0) + 1.0;
-            this.vocabulary.add(term);
+            tf[term] = (tf[term] || 0) + 1;
+            docLen++;
           }
         }
         if (this.indexResponse && doc.response) {
@@ -250,34 +255,62 @@
           for (var t2 = 0; t2 < responseTokens.length; t2++) {
             var term2 = responseTokens[t2];
             tf[term2] = (tf[term2] || 0) + this.responseWeight;
-            this.vocabulary.add(term2);
+            docLen += this.responseWeight;
           }
         }
-        docTermFreqs.push(tf);
+        this.documents[d].tf = tf;
+        this.documents[d].docLen = docLen;
+        this.docLengths.push(docLen);
+        totalLength += docLen;
         for (var term3 in tf) {
-          docFrequencies[term3] = (docFrequencies[term3] || 0) + 1;
+          this.docFreqs[term3] = (this.docFreqs[term3] || 0) + 1;
         }
       }
-
-      this.idf = {};
-      for (var vocabTerm of this.vocabulary) {
-        var df = docFrequencies[vocabTerm] || 0;
-        this.idf[vocabTerm] = Math.log(1 + (numDocs / (1 + df))) + 1;
-      }
-
-      for (var d2 = 0; d2 < numDocs; d2++) {
-        var tf2 = docTermFreqs[d2];
-        var vector = {};
-        var sumSq = 0;
-        for (var vTerm in tf2) {
-          var tfidf = tf2[vTerm] * this.idf[vTerm];
-          vector[vTerm] = tfidf;
-          sumSq += tfidf * tfidf;
-        }
-        this.documents[d2].vector = vector;
-        this.documents[d2].norm = Math.sqrt(sumSq);
-      }
+      this.avgDocLength = totalLength / this.numDocs;
       this.isTrained = true;
+    }
+
+    bm25Score(queryTf, doc) {
+      var score = 0;
+      for (var term in queryTf) {
+        var df = this.docFreqs[term] || 0;
+        var idf = Math.log((this.numDocs - df + 0.5) / (df + 0.5) + 1);
+        var tf = doc.tf[term] || 0;
+        var numerator = tf * (this.k1 + 1);
+        var denominator = tf + this.k1 * (1 - this.b + this.b * doc.docLen / this.avgDocLength);
+        score += idf * (numerator / denominator);
+      }
+      return score;
+    }
+
+    _getSessionState() {
+      try {
+        var raw = sessionStorage.getItem(SESSION_KEY);
+        return raw ? JSON.parse(raw) : { history: [], lastTopic: null };
+      } catch (e) {
+        return { history: [], lastTopic: null };
+      }
+    }
+
+    _setSessionState(state) {
+      try {
+        sessionStorage.setItem(SESSION_KEY, JSON.stringify(state));
+      } catch (e) {}
+    }
+
+    _matchCategoryScoped(queryTf, category) {
+      var bestScore = 0;
+      var bestDoc = null;
+      for (var d = 0; d < this.numDocs; d++) {
+        var doc = this.documents[d];
+        if (doc.category !== category) continue;
+        var score = this.bm25Score(queryTf, doc);
+        if (score > bestScore) {
+          bestScore = score;
+          bestDoc = doc;
+        }
+      }
+      return { score: bestScore, doc: bestDoc };
     }
 
     query(userQuery) {
@@ -301,6 +334,10 @@
           }
         }
         if (!hasContentWords) {
+          var sessionState = this._getSessionState();
+          sessionState.lastTopic = 'greeting';
+          sessionState.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: this.greetingResponse });
+          this._setSessionState(sessionState);
           return { match: true, intent: { tag: 'greeting' }, score: 1, category: 'greeting', response: this.greetingResponse };
         }
       }
@@ -314,6 +351,9 @@
           }
         }
         if (!hasThanksContent) {
+          var sessionState2 = this._getSessionState();
+          sessionState2.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: this.thanksResponse });
+          this._setSessionState(sessionState2);
           return { match: true, intent: { tag: 'thanks' }, score: 1, category: 'thanks', response: this.thanksResponse };
         }
       }
@@ -327,6 +367,9 @@
           }
         }
         if (!hasByeContent) {
+          var sessionState3 = this._getSessionState();
+          sessionState3.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: this.byeResponse });
+          this._setSessionState(sessionState3);
           return { match: true, intent: { tag: 'bye' }, score: 1, category: 'bye', response: this.byeResponse };
         }
       }
@@ -340,57 +383,54 @@
 
       var queryTf = {};
       for (var i = 0; i < queryTokens.length; i++) {
-        queryTf[queryTokens[i]] = (queryTf[queryTokens[i]] || 0) + 1.0;
-      }
-
-      var queryVector = {};
-      var querySumSq = 0;
-      for (var qTerm in queryTf) {
-        var termIdf = this.idf[qTerm] || (Math.log(1 + (this.documents.length / 1)) + 1);
-        var val = queryTf[qTerm] * termIdf;
-        queryVector[qTerm] = val;
-        querySumSq += val * val;
-      }
-      var queryNorm = Math.sqrt(querySumSq);
-
-      if (queryNorm === 0) {
-        return { match: false, intent: null, score: 0, category: 'none', response: this.fallbackResponse };
+        queryTf[queryTokens[i]] = (queryTf[queryTokens[i]] || 0) + 1;
       }
 
       var bestMatch = null;
       var highestScore = 0;
 
-      for (var d3 = 0; d3 < this.documents.length; d3++) {
+      for (var d3 = 0; d3 < this.numDocs; d3++) {
         var doc3 = this.documents[d3];
-        if (!doc3.norm || doc3.norm === 0) continue;
-        var dotProduct = 0;
-        for (var qt in queryVector) {
-          if (doc3.vector[qt]) {
-            dotProduct += queryVector[qt] * doc3.vector[qt];
-          }
-        }
-        var score = dotProduct / (queryNorm * doc3.norm);
+        var score = this.bm25Score(queryTf, doc3);
         if (score > highestScore) {
           highestScore = score;
           bestMatch = doc3;
         }
       }
 
-      var uniqueQueryTerms = Object.keys(queryTf).length;
-      if (uniqueQueryTerms <= 2 && highestScore > 0) {
-        highestScore = Math.min(1.0, highestScore * 1.4);
-      } else if (uniqueQueryTerms <= 4 && highestScore > 0) {
-        highestScore = Math.min(1.0, highestScore * 1.15);
+      var isMatch = highestScore >= this.threshold && bestMatch !== null;
+      var contextUsed = false;
+
+      if (!isMatch && queryTokens.length <= 4) {
+        var sessionState4 = this._getSessionState();
+        if (sessionState4.lastTopic) {
+          var scopedResult = this._matchCategoryScoped(queryTf, sessionState4.lastTopic);
+          if (scopedResult.score >= this.threshold && scopedResult.doc) {
+            highestScore = scopedResult.score;
+            bestMatch = scopedResult.doc;
+            isMatch = true;
+            contextUsed = true;
+          }
+        }
       }
 
-      var isMatch = highestScore >= this.threshold && bestMatch !== null;
+      var responseText = isMatch ? bestMatch.response : this.fallbackResponse;
+      var sessionState5 = this._getSessionState();
+      if (isMatch) {
+        sessionState5.lastTopic = bestMatch.category;
+      } else {
+        sessionState5.lastTopic = null;
+      }
+      sessionState5.history.push({ role: 'user', text: userQuery }, { role: 'bot', text: responseText });
+      this._setSessionState(sessionState5);
 
       return {
         match: isMatch,
         intent: isMatch ? bestMatch.rawItem : null,
         score: Math.round(highestScore * 1000) / 1000,
         category: isMatch ? bestMatch.category : 'none',
-        response: isMatch ? bestMatch.response : this.fallbackResponse
+        contextUsed: contextUsed,
+        response: responseText
       };
     }
   }

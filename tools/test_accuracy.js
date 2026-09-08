@@ -1,7 +1,7 @@
 const IntentEngine = require('../src/engine.js');
 const fs = require('fs');
 
-const engine = new IntentEngine({ threshold: 0.20 });
+const engine = new IntentEngine({ threshold: 1.0 });
 
 const files = [
   'college_info',

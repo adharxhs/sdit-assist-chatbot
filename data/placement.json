@@ -16,7 +16,7 @@
       "placed",
       "i want to know about the overall placement scenario and track record of the college"
     ],
-    "response": "SDIT has consistently maintained an excellent recruitment record. On average, 90-95% of eligible final year students are placed through campus placements. Historical offer letters: 427+ (2016), 452+ (2017), 461+ (2018), 480+ (2019), 492+ (2020). Placements begin in the 7th semester with participation from top-tier companies across IT, engineering, finance, and consulting sectors. The college also conducts pool campus drives involving other engineering colleges from the Mangalore region."
+    "response": "SDIT maintains an excellent placement record with 90-95% of eligible students placed through campus drives. Placements start in the 7th semester, with top companies from IT, engineering, finance, and consulting participating. The college also hosts pool campus drives. Want details on recruiters or training?"
   },
   {
     "tag": "placement_statistics",
@@ -32,7 +32,7 @@
       "placement record",
       "how many students were placed in the last few years"
     ],
-    "response": "On average 90-95% of eligible final year students are placed through campus placements. Year-wise offer letters: 2016 - 427+, 2017 - 452+, 2018 - 461+, 2019 - 480+, 2020 - 492+. SDIT has successfully placed all eligible interested candidates of Engineering, MBA, and MCA through ongoing campus and pool campus placements."
+    "response": "On average, 90-95% of eligible final-year students are placed. Year-wise offer letters: 2016 - 427+, 2017 - 452+, 2018 - 461+, 2019 - 480+, 2020 - 492+. All eligible interested candidates from Engineering, MBA, and MCA have been placed through ongoing campus and pool drives."
   },
   {
     "tag": "placement_recruiters",
@@ -50,7 +50,7 @@
       "which companies come for campus recruitment",
       "name some companies that recruit from sdit"
     ],
-    "response": "Top recruiters at SDIT include: Infosys, Accenture, Amazon, IBM, Cognizant, Deloitte, Oracle, EY, PwC, HCLTech, Cisco, Dell Technologies, Tech Mahindra, Wells Fargo, SLK Software, Mphasis, Trigent Software, Airtel, Ericsson, QSpider, ICICI Bank, SmartDV, Birla Soft, Sutherland, Sankalp Semiconductor, Collaberaand many more companies across IT, engineering, and consulting sectors."
+    "response": "Top recruiters include Infosys, Accenture, Amazon, IBM, Cognizant, Deloitte, Oracle, EY, PwC, HCLTech, Cisco, Dell Technologies, Tech Mahindra, Wells Fargo, and many more across IT, engineering, and consulting. Want to know which companies recruit for specific branches?"
   },
   {
     "tag": "placement_training",
@@ -68,7 +68,7 @@
       "placement preparation",
       "what kind of training does the placement department provide to students"
     ],
-    "response": "The Department of Placement & Training provides comprehensive support: Pre-placement training on aptitude, logical skills, technical knowledge, and communication for 2nd, 3rd, and final year students. Activities include mock interviews by experts, placement talks by resource persons, resume building workshops, PDP programs, bridge courses, technology training programs, competitive exam preparation (CAT, GMAT, aptitude), and assistance with industrial internships. The department also organizes industrial visits for early industry exposure."
+    "response": "The Placement & Training department offers aptitude, logical reasoning, technical, and communication training for 2nd, 3rd, and final-year students. Activities include mock interviews, resume workshops, PDP programs, technology training, and industrial visits. Need details on the training schedule?"
   },
   {
     "tag": "placement_officer",
@@ -83,7 +83,7 @@
       "training and placement officer",
       "who heads the placement department"
     ],
-    "response": "The Training and Placement Officer (TPO) at SDIT is Mr. Roshal Lynshal Nazareth. The department facilitates campus recruitment, pool campus drives, industry interaction, and career guidance for students."
+    "response": "The Training & Placement Officer (TPO) is Mr. Roshal Lynshal Nazareth. The department handles campus recruitment, pool drives, industry interaction, and career guidance. Need to get in touch with the placement cell?"
   },
   {
     "tag": "placement_facilities",
@@ -97,7 +97,7 @@
       "interview rooms",
       "placement facilities"
     ],
-    "response": "The Placement and Training Department has dedicated facilities for recruitment drives including a seminar hall for company presentations, group discussion rooms, conferencing facilities, and interview & discussion rooms."
+    "response": "The Placement department has a seminar hall for company presentations, group discussion rooms, conferencing facilities, and interview rooms for recruitment drives."
   },
   {
     "tag": "placement_goals",
@@ -107,6 +107,6 @@
       "what does the placement cell aim to do",
       "placement department mission"
     ],
-    "response": "The Placement Department goals are: to assist graduates in developing a balanced set of technical and interpersonal skills with a positive attitude; to act as a nodal agency for forging technology alliances between SDIT departments and industries; to provide quality technical manpower to suit organizational needs; and to develop as a single-window point for career counselling and higher learning in engineering and technology."
+    "response": "The Placement Department aims to develop students' technical and interpersonal skills, build industry partnerships, provide quality manpower to organizations, and serve as a single window for career counselling and higher learning opportunities."
   }
 ]
