@@ -135,5 +135,27 @@
       "course fees"
     ],
     "response": "For detailed fee information, please contact SDIT directly at +91 (824) 2254104 or visit sdit.ac.in. Fees vary by program and are set according to government regulations. Anything else I can help with?"
+  },
+  {
+    "tag": "scholarship",
+    "patterns": [
+      "are there scholarships at sdit",
+      "does sdit offer scholarships",
+      "tell me about scholarships",
+      "what scholarships are available",
+      "financial aid for students",
+      "scholarship",
+      "scholarships",
+      "financial assistance",
+      "fee concession",
+      "merit scholarship",
+      "government scholarship",
+      "who can get scholarship",
+      "how to apply for scholarship",
+      "are there any fee waivers",
+      "can i get a scholarship at sdit",
+      "what financial support is available for students"
+    ],
+    "response": "SDIT offers merit-based scholarships for academically outstanding students, plus financial assistance based on need and merit. Scholarships are available through government departments including Backward Welfare, Social Welfare, Tribal Welfare, Minority Welfare, Technical Education, Agriculture, and Brahmin Welfare — as well as the Sitaram Jindal Foundation and Management Concessions. For eligibility details, contact the admissions office."
   }
 ]

@@ -101,6 +101,40 @@
     'see you', 'see ya', 'good bye', 'bye bye', 'catch you later'
   ];
 
+  var HOWAREYOU_PHRASES = [
+    'how are you', 'how are you doing', 'how are you doin', 'how are you today',
+    'how do you do', 'how you doing', 'how ya doing', 'hows it going',
+    'how is it going', 'hows life', 'how are things', 'how have you been',
+    'how do you feel', 'are you ok', 'are you okay', 'you good', 'u good'
+  ];
+
+  var HOWAREYOU_WORDS = new Set([
+    'howdy', 'yo'
+  ]);
+
+  var HOWAREYOU_ALLOWED = new Set([
+    'how', 'are', 'you', 'doing', 'doin', 'today', 'do', 'ya', 'hows',
+    'is', 'going', 'life', 'things', 'have', 'been', 'feel', 'ok', 'okay',
+    'good', 'u', 'hi', 'hello', 'hey', 'yo', 'howdy', 'and', 'how'
+  ]);
+
+  var WHOAREYOU_PHRASES = [
+    'who are you', 'what are you', 'what is your name', 'whats your name',
+    'what should i call you', 'tell me about yourself', 'introduce yourself',
+    'who is this', 'what are you called', 'do you have a name', 'are you a bot',
+    'are you human', 'are you real', 'what are you exactly', 'who built you'
+  ];
+
+  var WHOAREYOU_TRIGGER = new Set([
+    'yourself', 'name', 'bot', 'human', 'called', 'built'
+  ]);
+
+  var WHOAREYOU_ALLOWED = new Set([
+    'who', 'what', 'are', 'you', 'your', 'name', 'call', 'called', 'tell', 'me',
+    'introduce', 'yourself', 'this', 'bot', 'human', 'real', 'exactly',
+    'built', 'is', 'a', 'an', 'do', 'have', 'about', 'the', 'who', 'should'
+  ]);
+
   var AFFIRM_WORDS = new Set([
     'yes', 'yeah', 'yep', 'yup', 'yass', 'affirmative', 'sure', 'ok', 'okay',
     'alright', 'absolutely', 'definitely', 'agreed', 'certainly', 'continue',
@@ -260,6 +294,10 @@
       this.greetingResponse = config.greetingResponse || "Hello! Welcome to SDIT Assist. I can help you with information about Shree Devi Institute of Technology. Ask me about courses & departments, admissions & eligibility, campus facilities, placements, or general college info!";
       this.thanksResponse = config.thanksResponse || "You're welcome! Feel free to ask if you have more questions about SDIT.";
       this.byeResponse = config.byeResponse || "Goodbye! Thank you for using SDIT Assist. Have a great day!";
+      this.howAreYouResponse = config.howAreYouResponse || "I'm doing great, thanks for asking! I'm here to help you with anything about Shree Devi Institute of Technology — courses & departments, admissions & eligibility, campus facilities, placements, or general college info. What would you like to know?";
+      this.whoAreYouResponse = config.whoAreYouResponse || "I'm SDIT Assist, the friendly virtual assistant for Shree Devi Institute of Technology! I'm here to answer your questions about courses & departments, admissions, eligibility, campus facilities, placements, and more. What would you like to know about SDIT?";
+      this.placementOverviewResponse = config.placementOverviewResponse || "SDIT maintains an excellent placement record with 90–95% of eligible students placed through campus drives. Placements start in the 7th semester, and top companies from IT, engineering, finance, and consulting participate. The college also hosts pool campus drives. Want details on recruiters or placement training?";
+      this.sditGoodResponse = config.sditGoodResponse || "I can help with SDIT in a few ways—admissions eligibility, departments (CSE/ISE/ECE/ME/CE/Aero/MBA/MCA/M.Tech/PhD), campus facilities like labs/hostel/library, and placement information. What would you like to know specifically?";
       this.affirmContinuations = config.affirmContinuations || {};
       this.affirmNoTopicResponse = config.affirmNoTopicResponse || "Sure — what would you like to know? I can help with college info, departments, admissions & eligibility, campus facilities, or placements. Just ask naturally!";
       this.declineResponse = config.declineResponse || "No problem! I'm here whenever you have more questions about SDIT. You can ask me about departments, admissions, campus facilities, or placements anytime.";
@@ -420,6 +458,46 @@
 
       if (cleanWords.length === 0) {
         return { match: false, intent: null, score: 0, category: 'none', response: this.fallbackResponse };
+      }
+
+      if (normalized === 'placement' || normalized === 'placements') {
+        var pState = this._getSessionState();
+        pState.lastTopic = 'placement';
+        this._appendHistory(pState, userQuery, this.placementOverviewResponse);
+        this._setSessionState(pState);
+        return { match: true, intent: { tag: 'placement_overview' }, score: 1, category: 'placement', response: this.placementOverviewResponse };
+      }
+
+      if (normalized.indexOf('how are the placements') !== -1 || normalized.indexOf('how are placements') !== -1 || normalized.indexOf('how are you placed') !== -1) {
+        var pState2 = this._getSessionState();
+        pState2.lastTopic = 'placement';
+        this._appendHistory(pState2, userQuery, this.placementOverviewResponse);
+        this._setSessionState(pState2);
+        return { match: true, intent: { tag: 'placement_overview' }, score: 1, category: 'placement', response: this.placementOverviewResponse };
+      }
+
+      if (matchesAnyPhrase(normalized, ['is sdit good', 'is sdit a good college', 'is sdit good?', 'is sdit a good college?'])) {
+        var goodState = this._getSessionState();
+        goodState.lastTopic = 'college_info';
+        this._appendHistory(goodState, userQuery, this.sditGoodResponse);
+        this._setSessionState(goodState);
+        return { match: true, intent: { tag: 'sdit_good' }, score: 1, category: 'college_info', response: this.sditGoodResponse };
+      }
+
+      if (isPureExpression(cleanWords, normalized, WHOAREYOU_TRIGGER, WHOAREYOU_PHRASES, WHOAREYOU_ALLOWED)) {
+        var whoState = this._getSessionState();
+        whoState.lastTopic = 'who_are_you';
+        this._appendHistory(whoState, userQuery, this.whoAreYouResponse);
+        this._setSessionState(whoState);
+        return { match: true, intent: { tag: 'who_are_you' }, score: 1, category: 'smalltalk', response: this.whoAreYouResponse };
+      }
+
+      if (isPureExpression(cleanWords, normalized, HOWAREYOU_WORDS, HOWAREYOU_PHRASES, HOWAREYOU_ALLOWED)) {
+        var howState = this._getSessionState();
+        howState.lastTopic = 'how_are_you';
+        this._appendHistory(howState, userQuery, this.howAreYouResponse);
+        this._setSessionState(howState);
+        return { match: true, intent: { tag: 'how_are_you' }, score: 1, category: 'smalltalk', response: this.howAreYouResponse };
       }
 
       if (matchesAnyWord(cleanWords, GREETING_WORDS) || matchesAnyPhrase(normalized, GREETING_PHRASES)) {

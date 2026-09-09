@@ -61,6 +61,41 @@ const testQueries = [
   "I would like to inquire about whether the college provides hostel accommodation and transport facilities for outstation students.",
   "Could you tell me if SDIT is recognized by AICTE and affiliated to VTU university?",
 
+  // New pages added to dataset: clubs, committees, collaborations, industrial exposure, IQAC, NAAC, NIRF, scholarship, student progression
+  "clubs",
+  "what clubs can I join at sdit",
+  "committees",
+  "anti-ragging",
+  "collaborations",
+  "which companies has sdit signed MoUs with",
+  "industrial visits",
+  "industrial exposure",
+  "iqac",
+  "naac",
+  "what is the nirf ranking of sdit",
+  "scholarship",
+  "are there scholarships available",
+  "financial aid",
+  "student progression",
+  "do sdit students go abroad for higher studies",
+
+  // Fixed overrides (BM25 collision prevention)
+  "placement",
+  "placements",
+  "how are the placements",
+  "how are placements",
+  "is sdit good",
+  "is sdit a good college",
+
+  // Chit-chat / smalltalk fixed responses
+  "hi how are you",
+  "how are you",
+  "how are you doing",
+  "who are you",
+  "what is your name",
+  "tell me about yourself",
+  "are you a bot",
+
   // Adversarial / Edge Cases (Expected to return fallback properly)
   "",
   "   ",

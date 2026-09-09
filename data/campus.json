@@ -175,5 +175,32 @@
       "hangout"
     ],
     "response": "The campus has a recreational area where students can relax between classes and unwind."
+  },
+  {
+    "tag": "clubs",
+    "patterns": [
+      "what clubs are there at sdit",
+      "are there student clubs",
+      "tell me about clubs",
+      "student clubs at sdit",
+      "which clubs can i join",
+      "clubs",
+      "student clubs",
+      "college clubs",
+      "coding club",
+      "cultural club",
+      "sports club",
+      "eco club",
+      "nss",
+      "ncc",
+      "lingua nova",
+      "media mavericks",
+      "coders nexus",
+      "sports mania",
+      "samarpan",
+      "what extracurricular clubs are available",
+      "can i join any clubs at sdit"
+    ],
+    "response": "SDIT has several active clubs: Lingua Nova (language and communication skills), Media Mavericks (photography and videography), Coders Nexus (coding and hackathons), Sports Mania (sports and fitness), Cult-mosaic (cultural exchange), Finance Club, Marketing Club, HR Club, Samarpan (social service), and Eco Club (sustainability). Interested in joining one?"
   }
 ]

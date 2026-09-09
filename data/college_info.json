@@ -204,7 +204,7 @@
       "how does this work",
       "start"
     ],
-    "response": "I can help you with: (1) College Info — about SDIT, vision, mission, affiliation, CET codes, faculty; (2) Departments — CSE, AIML, ISE, AI&DS, ECE, Mechanical, Civil, Aeronautical, MBA, MCA, M.Tech, PhD; (3) Admissions — eligibility, documents, how to apply, fees; (4) Campus — hostel, labs, library, sports, canteen, transport; (5) Placements — stats, recruiters, training, internships. Just ask naturally!"
+    "response": "I can help you with: (1) College Info — about SDIT, vision, mission, affiliation, CET codes, faculty, committees, collaborations, NAAC, NIRF; (2) Departments — CSE, AIML, ISE, AI&DS, ECE, Mechanical, Civil, Aeronautical, MBA, MCA, M.Tech, PhD; (3) Admissions — eligibility, documents, how to apply, fees, scholarships; (4) Campus — hostel, labs, library, sports, canteen, transport, clubs; (5) Placements — stats, recruiters, training, internships, industrial exposure. Just ask naturally!"
   },
   {
     "tag": "principal",
@@ -237,5 +237,115 @@
       "is the teaching staff good"
     ],
     "response": "SDIT's faculty members are experienced, dedicated, and passionate about teaching and research. They serve as mentors and role models, guiding students through their academic journey. The well-qualified staff augments the state-of-the-art laboratories and infrastructure to support effective learning."
+  },
+  {
+    "tag": "committees",
+    "patterns": [
+      "what committees does sdit have",
+      "tell me about committees",
+      "does sdit have an anti-ragging committee",
+      "anti-ragging at sdit",
+      "student committees at sdit",
+      "committees",
+      "anti-ragging",
+      "grievance cell",
+      "discipline committee",
+      "internal complaint committee",
+      "what committees function at sdit",
+      "tell me about the anti-ragging policy"
+    ],
+    "response": "SDIT has several active committees including an Anti-Ragging Committee, Grievance Redressal Cell, Internal Complaint Committee, and Discipline Committee. Ragging in any form is strictly prohibited and carries penalties ranging from suspension to fines of Rs 25,000–1 lakh and cancellation of admission. Want details on any specific committee?"
+  },
+  {
+    "tag": "collaborations",
+    "patterns": [
+      "does sdit have industry collaborations",
+      "tell me about collaborations",
+      "which companies has sdit partnered with",
+      "industry partnerships at sdit",
+      "mou collaborations",
+      "collaborations",
+      "industry tie-ups",
+      "partner institutions",
+      "corporate partnerships",
+      "how many MoUs does sdit have",
+      "what companies has sdit signed MoUs with"
+    ],
+    "response": "SDIT has signed MoUs with over 30 institutions, industries, and corporates — including EY, Accolade Tech Solutions, SMEC Automation, Kakunje Software, ISTD, and many more since 2017. These partnerships support internships, training, and industry exposure. Interested in specific partnerships?"
+  },
+  {
+    "tag": "industrial_exposure",
+    "patterns": [
+      "does sdit arrange industrial visits",
+      "tell me about industrial exposure",
+      "industrial visits at sdit",
+      "factory visits for students",
+      "industrial training",
+      "industry visits",
+      "industrial exposure",
+      "practical industry experience",
+      "do students get to visit industries",
+      "how does sdit provide industry exposure"
+    ],
+    "response": "Industrial visits are an integral part of the academic curriculum for engineering, MBA, and MCA students at SDIT. These visits give students firsthand experience of real-world industrial operations, bridging the gap between theory and practice. Want to know about specific industry partnerships?"
+  },
+  {
+    "tag": "iqac",
+    "patterns": [
+      "what is iqac",
+      "tell me about iqac at sdit",
+      "internal quality assurance cell",
+      "quality assurance at sdit",
+      "iqac",
+      "quality cell",
+      "what does iqac do",
+      "is sdit iqac accredited"
+    ],
+    "response": "SDIT has an Internal Quality Assurance Cell (IQAC) that coordinates quality-related initiatives and ensures compliance with NAAC and UGC standards. The IQAC oversees academic audits, feedback mechanisms, and institutional development activities. Anything specific about quality assurance you'd like to know?"
+  },
+  {
+    "tag": "naac",
+    "patterns": [
+      "is sdit naac accredited",
+      "tell me about naac at sdit",
+      "what is the naac status of sdit",
+      "naac accreditation",
+      "naac grade",
+      "naac",
+      "accreditation status",
+      "naac criteria",
+      "has sdit been accredited by naac"
+    ],
+    "response": "SDIT has a NAAC-accredited profile with detailed documentation across all 7 criteria — curricular aspects, teaching-learning, research, infrastructure, student support, governance, and institutional values. For the latest NAAC grade and detailed reports, visit sdit.ac.in. Need details on any specific criterion?"
+  },
+  {
+    "tag": "nirf",
+    "patterns": [
+      "does sdit have nirf ranking",
+      "what is the nirf ranking of sdit",
+      "nirf ranking",
+      "nirf",
+      "national institutional ranking framework",
+      "sdit ranking",
+      "how is sdit ranked nationally",
+      "nirf 2026 ranking"
+    ],
+    "response": "SDIT submits data to the National Institutional Ranking Framework (NIRF) under the Engineering and Management categories. NIRF rankings are published annually by the Ministry of Education. For the latest ranking and detailed metrics, visit nirfindia.org or sdit.ac.in."
+  },
+  {
+    "tag": "student_progression",
+    "patterns": [
+      "do sdit students go abroad for higher studies",
+      "student progression at sdit",
+      "higher studies after sdit",
+      "students pursuing masters abroad",
+      "alumni going abroad",
+      "student progression",
+      "higher education after sdit",
+      "which universities do sdit students join",
+      "do students pursue pg after be at sdit",
+      "where do sdit graduates go"
+    ],
+    "response": "Several SDIT graduates have progressed to higher studies at universities worldwide, including Philipps-Universität, University of South Florida, California State University, Anglia Ruskin University, University of Galway, and many more. Students from CSE, Mechanical, ECE, ISE, MBA, and MCA departments have secured admissions through competitive processes. Interested in a specific department's progression?"
   }
 ]

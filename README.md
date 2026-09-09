@@ -26,6 +26,7 @@ npm run dev
 5. For short queries, optionally re-match within the **last resolved topic** from session context
 6. Special-case tiers for:
    - greetings / thanks / bye
+   - chit-chat (`how are you`, `who are you` / `what is your name`)
    - `yes`/`sure`/`tell me more` (continuation menus)
    - `no`/`that's all` (decline)
    - `help` (help menu)
