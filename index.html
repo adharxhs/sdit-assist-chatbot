@@ -1,59 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SDIT Assist — Shree Devi Institute of Technology</title>
+  <title>SDIT — Shree Devi Institute of Technology, Mangalore</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="chat-container">
-    <!-- Header -->
-    <header class="chat-header">
-      <div class="header-info">
-        <div class="bot-avatar">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="white">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-          </svg>
-        </div>
-        <div class="bot-title">
-          <h1>SDIT Assist</h1>
-        </div>
+  <div class="page-wrapper">
+    <!-- Top Bar (CET / PGCET Codes) -->
+    <div class="top-info-bar">
+      <div class="top-info-container">
+        <span class="info-tag">CET Code: <strong>E146</strong></span>
+        <span class="info-separator">•</span>
+        <span class="info-tag">PGCET: MBA - <strong>B281</strong> | MCA - <strong>C476</strong> | M.Tech -
+          <strong>T868</strong></span>
+        <span class="info-separator">•</span>
+        <span class="info-tag">Affiliated to VTU Belagavi | Approved by AICTE, New Delhi</span>
       </div>
-    </header>
-
-    <!-- Messages Window -->
-    <main class="chat-messages" id="chatMessages" role="log" aria-live="polite">
-      <div class="message bot">
-        <div class="message-bubble">
-          Welcome to <strong>Shree Devi Institute of Technology (SDIT)</strong>! I am SDIT Assist, your automated assistant. How can I help you today? You can ask about courses, departments, admissions, campus facilities, or placements.
-        </div>
-        <div class="message-time" id="welcomeTime"></div>
-      </div>
-    </main>
-
-    <!-- Quick Suggestion Chips -->
-    <div class="chat-suggestions" id="suggestionsContainer">
-      <button class="suggestion-chip" data-query="What courses are offered at SDIT?">Courses Offered</button>
-      <button class="suggestion-chip" data-query="What is the BE eligibility criteria?">BE Eligibility</button>
-      <button class="suggestion-chip" data-query="Tell me about campus facilities">Campus Facilities</button>
-      <button class="suggestion-chip" data-query="What are the placement statistics?">Placements</button>
-      <button class="suggestion-chip" data-query="How can I contact SDIT?">Contact Info</button>
     </div>
 
-    <!-- Input Footer -->
-    <footer class="chat-input-area">
-      <input type="text" id="userInput" class="chat-input" placeholder="Ask a question about SDIT..." maxlength="300" autocomplete="off">
-      <button type="button" id="sendBtn" class="send-btn" aria-label="Send message">
-        <svg viewBox="0 0 24 24">
-          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+    <!-- Global Header (Top Navigation) -->
+    <header class="global-header">
+      <div class="header-container">
+        <div class="header-left">
+          <a href="#" class="university-brand" aria-label="Shree Devi Institute of Technology">
+            <img src="assets/logo.png" alt="SDIT Logo" class="brand-logo" onerror="this.style.display='none'">
+            <div class="brand-text">
+              <span class="brand-title">SHREE DEVI</span>
+              <span class="brand-subtitle">INSTITUTE OF TECHNOLOGY</span>
+            </div>
+          </a>
+        </div>
+        <nav class="header-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Programs</a></li>
+            <li><a href="#" class="nav-link">Admissions</a></li>
+            <li><a href="#" class="nav-link">Campus</a></li>
+            <li><a href="#" class="nav-link">Placements</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="gold-separator"></div>
+    </header>
+
+    <!-- Main Page Content: About SDIT (from sdit.ac.in/about/) -->
+    <main class="about-page-main">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <div class="content-container">
+          <span class="breadcrumb-item"><a href="#">Home</a></span>
+        </div>
+      </nav>
+
+      <!-- About SDIT Article Body -->
+      <article class="about-article content-container">
+        <header class="about-header">
+          <span class="section-tag">About the Institution</span>
+          <h1 class="about-title">Shree Devi Institute of Technology</h1>
+          <p class="about-lead">
+            Welcome to Shree Devi Institute of Technology (SDIT), Kenjar Mangalore – a premier institution dedicated to
+            excellence in engineering education, management studies, and holistic student development.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-main-text">
+            <section class="content-block">
+              <h2>Foundation & Excellence</h2>
+              <p>
+                Established in <strong>2006</strong> under the aegis of <strong>Shree Devi Education Trust</strong>,
+                Shree Devi Institute of Technology has emerged as a beacon of quality education, offering a conducive
+                learning environment that fosters innovation, creativity, and leadership. Our institution is affiliated
+                to <strong>Visvesvaraya Technological University (VTU), Belagavi</strong> and recognized by the
+                <strong>AICTE, New Delhi</strong>, ensuring that our academic programs adhere to the highest educational
+                standards and industry relevance.
+              </p>
+            </section>
+
+            <section class="content-block">
+              <h2>Our Educational Philosophy</h2>
+              <p>
+                At Shree Devi Institute of Technology, we believe in nurturing well-rounded individuals who are not only
+                technically proficient but also socially responsible and ethically grounded. Our comprehensive
+                curriculum is designed to equip students with the knowledge, analytical skills, and hands-on exposure
+                needed to succeed in the dynamic and competitive world of technology and management.
+              </p>
+            </section>
+
+            <!-- Featured Campus Banner -->
+            <figure class="featured-image-box">
+              <img src="assets/gate-banner.jpg" alt="SDIT Campus Kenjar Mangalore" class="featured-img">
+              <figcaption class="image-caption">Shree Devi Institute of Technology Campus — Airport Road, Kenjar,
+                Mangalore</figcaption>
+            </figure>
+
+            <section class="content-block">
+              <h2>Faculty Mentorship & State-of-the-Art Labs</h2>
+              <p>
+                Our faculty members are experienced, dedicated, and passionate about teaching and research. They serve
+                as mentors and role models, guiding students through their academic journey and inspiring them to pursue
+                excellence in their chosen disciplines. With state-of-the-art laboratories, modern computing facilities,
+                an extensive library, and a student-centered approach to learning, we provide an enriching educational
+                experience that prepares graduates to tackle real-world engineering and managerial challenges with
+                confidence.
+              </p>
+            </section>
+
+            <section class="content-block">
+              <h2>Vibrant Campus Life & Holistic Development</h2>
+              <p>
+                Beyond academics, Shree Devi Institute of Technology offers a vibrant campus life enriched with a wide
+                range of co-curricular activities, technical fests, cultural events, sports facilities, and social
+                community engagement initiatives. We encourage students to explore diverse interests, build teamwork,
+                develop leadership qualities, and contribute positively to society.
+              </p>
+            </section>
+
+            <section class="content-block">
+              <h2>Industry Partnerships & Placements</h2>
+              <p>
+                Our strong industry partnerships and proactive <strong>Training and Placement Cell</strong> ensure that
+                our students are well-prepared for corporate careers. We collaborate with leading MNCs and core
+                engineering recruiters to provide internship opportunities, industrial visits, skill development
+                workshops, and placement assistance, helping our graduates secure rewarding careers across top-tier
+                organizations.
+              </p>
+            </section>
+
+            <section class="content-block">
+              <h2>Academic Programs Offered</h2>
+              <p>
+                Shree Devi Institute of Technology offers undergraduate, postgraduate, and doctoral research programs in
+                an ambience of scenic natural beauty set amidst the suburban surroundings of Mangalore:
+              </p>
+              <div class="programs-badge-grid">
+                <div class="program-badge-card">
+                  <h3>Bachelor of Engineering (B.E.)</h3>
+                  <p>Computer Science (CSE), CSE (AI & ML), Information Science (ISE), AI & Data Science, Electronics &
+                    Communication (ECE), Mechanical (ME), Civil (CE), Aeronautical (Aero).</p>
+                </div>
+                <div class="program-badge-card">
+                  <h3>Postgraduate Programs</h3>
+                  <p>Master of Business Administration (MBA), Master of Computer Applications (MCA), M.Tech in
+                    Construction Technology.</p>
+                </div>
+                <div class="program-badge-card">
+                  <h3>Research Center (Ph.D.)</h3>
+                  <p>Recognized Research Centers under VTU offering doctoral research across engineering and management
+                    sciences.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Quick Information Sidebar Column -->
+          <aside class="about-sidebar">
+            <div class="sidebar-info-card">
+              <h3>Quick Facts</h3>
+              <ul class="quick-facts-list">
+                <li><strong>Established:</strong> 2006</li>
+                <li><strong>Affiliation:</strong> VTU, Belagavi</li>
+                <li><strong>Approval:</strong> AICTE, New Delhi</li>
+                <li><strong>CET Code:</strong> E146</li>
+                <li><strong>PGCET Codes:</strong> MBA (B281), MCA (C476), M.Tech (T868)</li>
+                <li><strong>Campus Location:</strong> Airport Road, Kenjar, Mangalore</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-help-card">
+              <h3>Need Assistance?</h3>
+              <p>Have questions about admissions, cutoffs, departments, or placements? Chat with our automated
+                assistant.</p>
+              <button class="open-assistant-btn" id="openAssistantCtaBtn" type="button">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
+                </svg>
+                <span>Ask SDIT Assist</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <!-- Page Footer -->
+    <footer class="global-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <div class="footer-brand-title">SHREE DEVI INSTITUTE OF TECHNOLOGY</div>
+          <p class="footer-brand-sub">Affiliated to VTU Belagavi & Approved by AICTE, New Delhi.</p>
+          <p class="footer-brand-sub">Managed by Shree Devi Education Trust.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Academics</h4>
+          <ul>
+            <li><a href="#">B.E. Programs</a></li>
+            <li><a href="#">MBA & MCA</a></li>
+            <li><a href="#">M.Tech Technology</a></li>
+            <li><a href="#">Research Centre (PhD)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About SDIT</h4>
+          <ul>
+            <li><a href="#">Vision & Mission</a></li>
+            <li><a href="#">Training & Placement</a></li>
+            <li><a href="#">IQAC & NAAC</a></li>
+            <li><a href="#">NIRF & RTI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Campus Address</h4>
+          <p>Airport Road, Kenjar, Mangalore - 574142, Karnataka State, India.</p>
+          <p class="footer-contact">Ph: +91 (824) 2254104 | info@sdc.ac.in</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Chatbot Overlay Modal (Opens on Click) -->
+    <div class="chat-overlay-backdrop" id="chatOverlay" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-label="SDIT Assistant Chatbot">
+      <div class="chat-overlay-container">
+        <div class="chat-modal">
+          <!-- Pane 1: Left Sidebar (FAQ) -->
+          <aside class="modal-sidebar-left" aria-label="Frequently Asked Questions">
+            <div class="sidebar-faq-header">
+              <h2>FAQ</h2>
+            </div>
+            <nav class="sidebar-faq-list" aria-label="FAQ Questions">
+              <button class="sidebar-faq-item suggestion-chip" data-query="What courses are offered at SDIT?">
+                What courses are offered at SDIT?
+              </button>
+              <button class="sidebar-faq-item suggestion-chip" data-query="What is the BE eligibility criteria?">
+                What is the BE eligibility criteria?
+              </button>
+              <button class="sidebar-faq-item suggestion-chip" data-query="Where is the campus located?">
+                Where is the campus located?
+              </button>
+              <button class="sidebar-faq-item suggestion-chip" data-query="What are the placement statistics?">
+                What are the placement statistics?
+              </button>
+              <button class="sidebar-faq-item suggestion-chip" data-query="Does SDIT have hostel facility?">
+                Does SDIT have hostel facility?
+              </button>
+              <button class="sidebar-faq-item suggestion-chip" data-query="How can I contact SDIT?">
+                How can I contact SDIT?
+              </button>
+            </nav>
+          </aside>
+
+          <!-- Pane 2: Central Chat Window -->
+          <section class="modal-chat-window">
+            <!-- Modal Header (Dark Blue) -->
+            <div class="modal-header">
+              <div class="modal-header-left">
+                <span class="bot-badge-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="white">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                </span>
+                <span class="modal-title-text">SDIT Assist</span>
+              </div>
+              <div class="modal-header-right">
+                <button class="header-action-icon modal-close-btn" id="closeChatBtn" title="Close Assistant"
+                  aria-label="Close Chat">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Chat Content (Body) -->
+            <div class="chat-messages" id="chatMessages" role="log" aria-live="polite">
+              <!-- Initial Bot Greeting Message -->
+              <div class="message bot">
+                <div class="message-bubble">
+                  Hello! How can I help you today? Ask me about courses, admissions, campus facilities, or placements.
+                </div>
+                <div class="message-time" id="welcomeTime"></div>
+              </div>
+            </div>
+
+            <!-- Input Area (Fixed Bottom) -->
+            <div class="chat-input-area">
+              <div class="input-bar-wrapper">
+                <input type="text" id="userInput" class="chat-input" placeholder="Type your message..." maxlength="300"
+                  autocomplete="off">
+                <div class="input-actions-right">
+                  <button type="button" id="sendBtn" class="send-btn" aria-label="Send message">
+                    <span>Send</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16">
+                      <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Chat Button with subtle "Click for help" trailing label -->
+    <div class="floating-chat-container">
+      <span class="floating-chat-label" id="floatingChatLabel">Click for help</span>
+      <button class="floating-chat-bubble" id="openChatBtn" aria-label="Open SDIT Assist" title="Open SDIT Assist">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+          <path
+            d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
         </svg>
       </button>
-    </footer>
+    </div>
   </div>
 
-  <!-- Matching Engine & Application Wiring -->
   <script src="src/engine.js"></script>
   <script src="src/app.js"></script>
 </body>
+
 </html>

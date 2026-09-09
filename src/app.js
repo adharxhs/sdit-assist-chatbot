@@ -126,16 +126,57 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
-  // Wire suggestion chips
-  if (suggestionsContainer) {
-    suggestionsContainer.addEventListener('click', (e) => {
-      const target = e.target.closest('.suggestion-chip');
-      if (target) {
-        const query = target.getAttribute('data-query');
-        if (query) {
-          handleSendMessage(query);
-        }
+  const chatOverlay = document.getElementById('chatOverlay');
+  const openChatBtn = document.getElementById('openChatBtn');
+  const closeChatBtn = document.getElementById('closeChatBtn');
+  const floatingChatLabel = document.getElementById('floatingChatLabel');
+  const openAssistantCtaBtn = document.getElementById('openAssistantCtaBtn');
+
+  function openChatModal() {
+    if (chatOverlay) {
+      chatOverlay.classList.add('active');
+      chatOverlay.setAttribute('aria-hidden', 'false');
+      if (userInput) {
+        setTimeout(() => userInput.focus(), 150);
+      }
+    }
+  }
+
+  function closeChatModal() {
+    if (chatOverlay) {
+      chatOverlay.classList.remove('active');
+      chatOverlay.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  if (openChatBtn) openChatBtn.addEventListener('click', openChatModal);
+  if (floatingChatLabel) floatingChatLabel.addEventListener('click', openChatModal);
+  if (openAssistantCtaBtn) openAssistantCtaBtn.addEventListener('click', openChatModal);
+  if (closeChatBtn) closeChatBtn.addEventListener('click', closeChatModal);
+
+  if (chatOverlay) {
+    chatOverlay.addEventListener('click', (e) => {
+      if (e.target === chatOverlay) {
+        closeChatModal();
       }
     });
   }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && chatOverlay && chatOverlay.classList.contains('active')) {
+      closeChatModal();
+    }
+  });
+
+  // Wire suggestion chips anywhere on the page
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('.suggestion-chip');
+    if (target) {
+      const query = target.getAttribute('data-query');
+      if (query) {
+        openChatModal();
+        handleSendMessage(query);
+      }
+    }
+  });
 });
