@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const userInput = document.getElementById('userInput');
   const sendBtn = document.getElementById('sendBtn');
   const suggestionsContainer = document.getElementById('suggestionsContainer');
-  const welcomeTime = document.getElementById('welcomeTime');
 
   // Format current timestamp
   function getFormattedTime() {
@@ -11,15 +10,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   }
 
-  if (welcomeTime) {
-    welcomeTime.textContent = getFormattedTime();
-  }
-
   // Instantiate the matching engine (BM25 threshold)
   const engine = new IntentEngine({
     threshold: 1.0,
     fallbackResponse: "I'm sorry, I couldn't find specific information for your query in the SDIT records. Try asking about:\n\n• Courses & Departments (CSE, ISE, AIML, ECE, ME, CE, Aero, MBA, MCA, M.Tech, PhD)\n• Admissions & Eligibility (BE, MBA, MCA, M.Tech, documents required)\n• Campus Facilities (hostel, labs, library, sports, canteen, transport)\n• Placements (statistics, top recruiters, TPO info, training)"
   });
+
+  // Conversation restore state
+  const SESSION_KEY = 'sdit_assist_session';
+  const INITIAL_GREETING = 'Hello! How can I help you today? Ask me about courses, admissions, campus facilities, or placements.';
+  let historyRestored = false;
+
+  // Restore any previously stored conversation before the widget is ready
+  restoreHistory();
 
   // Data files to load
   const dataFiles = [
@@ -91,6 +94,40 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     chatMessages.appendChild(messageDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  /**
+   * Restore a previously stored conversation from sessionStorage, or show the
+   * default greeting when no valid history exists.
+   */
+  function restoreHistory() {
+    if (historyRestored) return;
+    historyRestored = true;
+
+    let state = null;
+    try {
+      const raw = sessionStorage.getItem(SESSION_KEY);
+      state = raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      state = null;
+    }
+
+    const history = state && Array.isArray(state.history) ? state.history : [];
+    if (history.length === 0) {
+      appendMessage('bot', INITIAL_GREETING);
+      return;
+    }
+
+    history.forEach((entry) => {
+      if (
+        !entry ||
+        (entry.role !== 'user' && entry.role !== 'bot') ||
+        typeof entry.text !== 'string'
+      ) {
+        return;
+      }
+      appendMessage(entry.role, entry.text);
+    });
   }
 
   /**
